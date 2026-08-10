@@ -1,0 +1,19 @@
+import { Button } from "@/registry/bases/radix/ui/button"
+import { IconPlaceholder } from "@/app/(create)/components/icon-placeholder"
+
+export default function Pattern() {
+  return (
+    <Button>
+      <IconPlaceholder
+        lucide="MailIcon"
+        tabler="IconMail"
+        hugeicons="MailIcon"
+        phosphor="EnvelopeIcon"
+        remixicon="RiMailLine"
+        aria-hidden="true"
+      />
+      Login with Email
+    </Button>
+  )
+}
+

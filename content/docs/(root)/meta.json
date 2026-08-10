@@ -1,0 +1,12 @@
+{
+  "root": true,
+  "title": "Overview",
+  "pages": [
+    "index",
+    "get-started",
+    "styling",
+    "registry",
+    "changelog"
+  ]
+}
+

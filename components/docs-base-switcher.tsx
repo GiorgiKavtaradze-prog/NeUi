@@ -1,0 +1,55 @@
+import Link from "next/link"
+import { type RegistryItem } from "shadcn/schema"
+
+import { getCanonicalComponentDocPath } from "@/lib/component-doc-paths"
+import { filterAvailableBases } from "@/lib/registry-bases"
+import { cn } from "@/lib/utils"
+import { BASES } from "@/registry/bases"
+
+export function DocsBaseSwitcher({
+  base,
+  component,
+  className,
+}: {
+  base: string
+  component: string
+  className?: string
+}) {
+  const availableBases = filterAvailableBases(BASES as RegistryItem[])
+
+  const orderedBases = [...availableBases].sort((a, b) => {
+    if (a.name === "base") return -1
+    if (b.name === "base") return 1
+    return 0
+  })
+
+  const activeBase = availableBases.find((baseItem) => base === baseItem.name)
+
+  return (
+    <div className={cn("inline-flex w-full items-center gap-6", className)}>
+      {orderedBases.map((baseItem) => (
+        <Link
+          key={baseItem.name}
+          href={getCanonicalComponentDocPath(
+            component,
+            baseItem.name as "base" | "radix"
+          )}
+          prefetch={false}
+          data-active={base === baseItem.name}
+          className="text-site-muted-foreground hover:text-site-foreground data-[active=true]:text-site-foreground after:bg-site-foreground relative inline-flex items-center justify-center gap-1 pt-1 pb-0.5 text-base font-medium transition-colors after:absolute after:inset-x-0 after:bottom-[-4px] after:h-0.5 after:opacity-0 after:transition-opacity data-[active=true]:after:opacity-100"
+        >
+          {baseItem.title}
+        </Link>
+      ))}
+      {activeBase?.meta?.logo && (
+        <div
+          className="text-site-muted-foreground ml-auto size-4 shrink-0 opacity-80 [&_svg]:size-4"
+          dangerouslySetInnerHTML={{
+            __html: activeBase.meta.logo as string,
+          }}
+        />
+      )}
+    </div>
+  )
+}
+

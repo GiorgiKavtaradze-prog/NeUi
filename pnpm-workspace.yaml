@@ -1,0 +1,8 @@
+packages:
+  - "packages/*"
+  - "packages/registry/bases/*/components/*"
+allowBuilds:
+  esbuild: true
+  sharp: true
+  unrs-resolver: true
+

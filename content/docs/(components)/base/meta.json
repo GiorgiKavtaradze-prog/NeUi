@@ -1,0 +1,28 @@
+{
+  "root": true,
+  "title": "Base UI",
+  "pages": [
+    "alert",
+    "autocomplete",
+    "badge",
+    "data-grid",
+    "date-selector",
+    "event-calendar",
+    "file-upload",
+    "filters",
+    "frame",
+    "gantt",
+    "icon-stack",
+    "icon-tile",
+    "kanban",
+    "number-field",
+    "phone-input",
+    "rating",
+    "scrollspy",
+    "sortable",
+    "stepper",
+    "timeline",
+    "tree"
+  ]
+}
+

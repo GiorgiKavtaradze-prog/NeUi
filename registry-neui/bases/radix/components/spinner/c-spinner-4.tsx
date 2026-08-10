@@ -1,0 +1,22 @@
+import { Field, FieldLabel } from "@/registry/bases/radix/ui/field"
+import {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupInput,
+} from "@/registry/bases/radix/ui/input-group"
+import { Spinner } from "@/registry/bases/radix/ui/spinner"
+
+export default function Pattern() {
+  return (
+    <Field className="w-full max-w-xs">
+      <FieldLabel htmlFor="search-loading">Searching</FieldLabel>
+      <InputGroup id="search-loading">
+        <InputGroupInput placeholder="Search records…" />
+        <InputGroupAddon>
+          <Spinner className="size-4" />
+        </InputGroupAddon>
+      </InputGroup>
+    </Field>
+  )
+}
+
