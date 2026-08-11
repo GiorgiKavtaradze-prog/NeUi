@@ -15,7 +15,7 @@ export function CTABlock({ className }: { className?: string }) {
     >
       <div className="relative container flex flex-col items-center text-center">
         <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-pretty sm:text-4xl">
-          Start building with ReUI today.
+          Start building with NeUI today.
         </h2>
         <p className="mt-4 max-w-md text-base leading-relaxed text-pretty opacity-70">
           Free and open-source. Browse the catalog and copy any component

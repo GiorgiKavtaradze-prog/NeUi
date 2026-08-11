@@ -90,7 +90,7 @@ export default async function Page(props: {
     <>
       <JsonLd
         data={buildBreadcrumbJsonLd([
-          { name: "ReUI", path: "/" },
+          { name: "NeUI", path: "/" },
           { name: "Docs", path: "/docs" },
           { name: doc.title, path: page.url },
         ])}

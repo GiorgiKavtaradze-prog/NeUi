@@ -98,9 +98,9 @@ export function buildPageMetadata({
 }: PageMetadataOptions): Metadata {
   return {
     // The brand suffix is owned by the root layout's title template
-    // (`%s - ReUI`). Pages pass a clean, brand-free title so we never
-    // double up — the old `titleSuffix: "ReUI"` produced
-    // "… - ReUI - ReUI" (and "… for ReUI - ReUI - ReUI" on home).
+    // (`%s - NeUI`). Pages pass a clean, brand-free title so we never
+    // double up — the old `titleSuffix: "NeUI"` produced
+    // "… - NeUI - NeUI" (and "… for NeUI - NeUI - NeUI" on home).
     title,
     description,
     alternates: {
@@ -118,7 +118,7 @@ export function buildPageMetadata({
 }
 
 function getGenericComponentDocDescription(label: string) {
-  return `Install the open-source shadcn/ui ${label.toLowerCase()} component for React and Tailwind CSS with ReUI examples, CLI setup, and API guidance.`
+  return `Install the open-source shadcn/ui ${label.toLowerCase()} component for React and Tailwind CSS with NeUI examples, CLI setup, and API guidance.`
 }
 
 function getCategoryDocsDescription(category: string) {
@@ -287,7 +287,7 @@ export function buildArticleJsonLd({
 }
 
 /**
- * SoftwareApplication markup for the home page: ReUI as a free developer
+ * SoftwareApplication markup for the home page: NeUI as a free developer
  * tool. No aggregateRating: we have no first-party rating data.
  */
 export function buildSoftwareApplicationJsonLd() {

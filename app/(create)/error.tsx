@@ -5,18 +5,6 @@ import { RotateCwIcon } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 
-/**
- * Recoverable error boundary for the (create) surfaces (blocks, preview,
- * components, design-system).
- *
- * These routes run under `cacheComponents` (PPR). On a rare deploy-skew resume
- * an "invalid postponed state" invariant can be thrown mid-render; with no
- * boundary the client is left with a blank / half-hydrated document that only a
- * hard refresh clears. This boundary converts that into a visible, resettable
- * state: `reset()` re-renders the segment (a fresh render on the matching build
- * succeeds), and a full reload is offered as the guaranteed fallback. The happy
- * path is untouched — this only renders when a child actually throws.
- */
 export default function CreateError({
   error,
   reset,

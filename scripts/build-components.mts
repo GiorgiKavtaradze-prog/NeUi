@@ -225,8 +225,8 @@ async function parseComponentFile(
     }
   }
 
-  const importReuiRegex = /from\s+["']@\/registry-neui\/([^"']+)["']/g
-  while ((match = importReuiRegex.exec(content)) !== null) {
+  const importNeuiRegex = /from\s+["']@\/registry-neui\/([^"']+)["']/g
+  while ((match = importNeuiRegex.exec(content)) !== null) {
     const importPath = match[1]
     const componentName = getRegistryDependencyName(importPath)
     registryDependencies.add(componentName)

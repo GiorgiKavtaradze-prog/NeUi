@@ -67,7 +67,7 @@ export async function generateMetadata({
 
   return buildPageMetadata({
     // Keep the "UI Components" descriptor inline (it's a descriptor, not
-    // the brand); the root `%s - ReUI` template still appends the brand.
+    // the brand); the root `%s - NeUI` template still appends the brand.
     title: `${seo.title} - ${siteConfig.metadata.titleSuffixes.componentCategory}`,
     description: seo.description,
     path: `/components/${normalized}`,
@@ -77,7 +77,7 @@ export async function generateMetadata({
       `shadcn ${categoryLabel.toLowerCase()} components`,
       `${categoryLabel} React examples`,
       "open source shadcn components",
-      "reui components",
+      "neui components",
       ...seo.keywords,
     ],
   })
@@ -133,7 +133,7 @@ export default async function CategoryComponentsPage({
     <>
       <JsonLd
         data={buildBreadcrumbJsonLd([
-          { name: "ReUI", path: "/" },
+          { name: "NeUI", path: "/" },
           { name: "Components", path: "/components" },
           { name: seo.title, path: `/components/${normalized}` },
         ])}

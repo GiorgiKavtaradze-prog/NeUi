@@ -49,7 +49,7 @@ function ownerInitials(name: string) {
   return (parts[0]![0]! + parts[parts.length - 1]![0]!).toUpperCase()
 }
 
-/** Status label -> ReUI badge light variant (green done, amber in progress,
+/** Status label -> NeUI badge light variant (green done, amber in progress,
  *  neutral not started). */
 const STATUS_VARIANT: Record<string, BadgeProps["variant"]> = {
   Done: "success-light",

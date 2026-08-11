@@ -361,11 +361,11 @@ function getMetadata(base: string = "base"): MetadataData {
 
       try {
         // eslint-disable-next-line @typescript-eslint/no-require-imports
-        const reuiMod = require(`../registry-neui/bases/${base}/neui/_registry`)
-        const reuiItems = reuiMod.reui || []
-        for (const item of reuiItems) metadata[item.name] = item
+        const neuiMod = require(`../registry-neui/bases/${base}/neui/_registry`)
+        const neuiItems = neuiMod.neui || []
+        for (const item of neuiItems) metadata[item.name] = item
       } catch (e) {
-        console.warn(`Could not load reui registry for ${base}`, e)
+        console.warn(`Could not load neui registry for ${base}`, e)
       }
 
       try {
@@ -454,7 +454,7 @@ export function getComponent(
     : componentNameToCategory[base]?.[name]
 
   if (!normalizedCategory) {
-    // Hooks / reui shared modules don't have a category — they aren't
+    // Hooks / neui shared modules don't have a category — they aren't
     // browsable previews. The catalog never asks for these via this path
     // (server code handles them directly), so returning null here is safe.
     return null

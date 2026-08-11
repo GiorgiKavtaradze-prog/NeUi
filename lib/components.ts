@@ -353,7 +353,7 @@ export function getComponentCategorySeo(
 
   const fallbackDescription =
     categoryInfo?.description ||
-    `Explore free open-source shadcn/ui ${label.toLowerCase()} components for React and Tailwind CSS in ReUI.`
+    `Explore free open-source shadcn/ui ${label.toLowerCase()} components for React and Tailwind CSS in NeUI.`
   const fallbackIntro =
     count > 0
       ? `Browse {{count}} production-ready shadcn ${label.toLowerCase()} components built to help you move from primitives to polished product UI faster.`

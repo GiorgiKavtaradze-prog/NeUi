@@ -146,7 +146,7 @@ export function MobileNav({
                         {preset && (
                           <Badge
                             variant={preset.variant}
-                            className="ml-auto h-[18px] px-1.5 py-0 text-[10px] leading-none"
+                            className="ml-auto h-4.5 px-1.5 py-0 text-[10px] leading-none"
                           >
                             <span aria-hidden="true">{preset.label}</span>
                             <span className="sr-only">{preset.srLabel}</span>
@@ -232,4 +232,3 @@ function MobileLink({
     </Link>
   )
 }
-

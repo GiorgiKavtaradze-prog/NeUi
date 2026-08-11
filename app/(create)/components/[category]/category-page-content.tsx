@@ -35,11 +35,11 @@ export function CategoryPageContent({ components }: CategoryPageContentProps) {
 
     syncFromLocation()
     window.addEventListener("popstate", syncFromLocation)
-    window.addEventListener("reui-components-search", handleSearchChange)
+    window.addEventListener("neui-components-search", handleSearchChange)
 
     return () => {
       window.removeEventListener("popstate", syncFromLocation)
-      window.removeEventListener("reui-components-search", handleSearchChange)
+      window.removeEventListener("neui-components-search", handleSearchChange)
     }
   }, [])
 

@@ -40,13 +40,13 @@ export const metadata: Metadata = {
     "Base UI",
     "Radix UI",
     "TypeScript",
-    "ReUI",
+    "NeUI",
     "registry",
     "shadcn",
   ],
   authors: [
     {
-      name: "ReUI",
+      name: "NeUI",
       url: "https://neui.io",
     },
   ],

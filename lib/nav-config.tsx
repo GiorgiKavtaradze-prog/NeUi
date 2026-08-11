@@ -129,7 +129,7 @@ export type NavEntry =
 
 /** Single place to override the external Figma destination. */
 export const FIGMA_URL =
-  "https://www.figma.com/community/file/1649373313065184861/shadcn-ui-design-system-by-reui"
+  "https://www.figma.com/community/file/1649373313065184861/shadcn-ui-design-system-by-neui"
 
 /**
  * The menu, top to bottom. This is the single source of truth: the desktop

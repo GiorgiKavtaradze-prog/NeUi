@@ -1,9 +1,9 @@
 /**
- * Which shadcn component bases ReUI actually ships.
+ * Which shadcn component bases NeUI actually ships.
  *
  * `registry/` is a mirror of the upstream shadcn registry, so
  * `registry/bases.ts` and `registry/config.ts` will list every base shadcn
- * ships, whether or not ReUI has primitives and components for it. That is on
+ * ships, whether or not NeUI has primitives and components for it. That is on
  * purpose: the mirror stays lossless and updating it stays a straight copy.
  *
  * This module is the single global gate deciding which of those bases are
@@ -22,7 +22,7 @@
  */
 
 /**
- * The bases ReUI ships, as an allowlist.
+ * The bases NeUI ships, as an allowlist.
  *
  * Deliberately an allowlist rather than a denylist of unsupported bases. A
  * denylist only knows about the bases that exist today, so the next base shadcn
@@ -37,13 +37,13 @@ export const AVAILABLE_BASES: readonly string[] = ["base", "radix"]
 
 const AVAILABLE_BASE_SET: ReadonlySet<string> = new Set(AVAILABLE_BASES)
 
-/** True when ReUI ships this base and it may be shown, routed, or built. */
+/** True when NeUI ships this base and it may be shown, routed, or built. */
 export function isBaseAvailable(name: string): boolean {
   return AVAILABLE_BASE_SET.has(name)
 }
 
 /**
- * Narrow a list of mirrored bases down to the ones ReUI ships.
+ * Narrow a list of mirrored bases down to the ones NeUI ships.
  *
  * Generic and deliberately unconstrained in its element type. `BASES` is
  * inferred as `unknown[]` (the zod `registryItemSchema` inference does not

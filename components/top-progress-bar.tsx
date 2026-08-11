@@ -3,35 +3,6 @@
 import * as React from "react"
 import { usePathname, useSearchParams } from "next/navigation"
 
-/**
- * Global top page-load progress bar (a YouTube / GitHub style loading line).
- *
- * App Router does not expose router navigation events, so we drive the bar
- * from two signals:
- *   • START: a capturing document click listener detects an internal link
- *     click and kicks the bar off INSTANTLY, before the RSC payload for the
- *     next route has even been requested. That removes the "dead 1-2s" where
- *     a click felt unacknowledged.
- *   • DONE: when `usePathname()` / `useSearchParams()` change, the new route
- *     has committed.
- *
- * The ramp is a continuous, optimistic easing curve driven by
- * requestAnimationFrame: `CAP * (1 - e^(-t/TAU))`. It moves quickly at first
- * and eases as it approaches CAP (~90%), so there is no hard stop or stutter,
- * and it never visually "completes" before the route actually lands.
- *
- * The FINISH is deliberately unhurried so it never feels like a flash:
- *   1. A minimum on-screen threshold (MIN_VISIBLE_MS) so very fast loads still
- *      read as a smooth pass rather than a blink.
- *   2. A two-phase close: glide the fill to 100% (FILL_MS, eased), then gently
- *      fade out (FADE_MS).
- * A safety timeout force-finishes the bar if a navigation never lands.
- *
- * Positioning: pinned to the very top of the viewport (top:0) at a z-index
- * above the sticky chrome, so the line sits on top of the announcement banner
- * and header when they are present.
- */
-
 const TAU_MS = 1100 // ramp time-constant: lower = reaches CAP faster
 const CAP = 90 // ramp asymptote (%) while waiting for the route
 const MIN_VISIBLE_MS = 400 // minimum on-screen time before finishing
@@ -49,8 +20,6 @@ function TopProgressBarInner() {
   const [phase, setPhase] = React.useState<Phase>("idle")
   const [progress, setProgress] = React.useState(0)
 
-  // Imperative mirrors so the global click listener reads live values without
-  // re-subscribing on every render.
   const phaseRef = React.useRef<Phase>("idle")
   const startedAtRef = React.useRef(0)
   const rafRef = React.useRef<number | null>(null)
@@ -146,8 +115,6 @@ function TopProgressBarInner() {
       } catch {
         return
       }
-      // External, non-page, or no-op (same URL) targets don't trigger a page
-      // load, so skip them; the bar only reflects real route navigations.
       if (url.origin !== window.location.origin) return
       if (url.pathname.startsWith("/api/")) return
       if (
@@ -180,10 +147,6 @@ function TopProgressBarInner() {
 
   if (phase === "idle") return null
 
-  // The ramp is already smooth per-frame (rAF), so loading uses a 0s width
-  // transition to track the curve exactly. Keeping `width` as the transitioned
-  // property (rather than `none`) guarantees the handoff into the eased fill
-  // animates instead of snapping. Filling / fading own the eased close.
   const barStyle: React.CSSProperties =
     phase === "loading"
       ? { width: `${progress}%`, opacity: 1, transition: "width 0s" }
@@ -202,7 +165,7 @@ function TopProgressBarInner() {
   return (
     <div
       aria-hidden="true"
-      className="pointer-events-none fixed inset-x-0 top-0 z-[100] h-0.5"
+      className="pointer-events-none fixed inset-x-0 top-0 z-100 h-0.5"
     >
       <div
         className="bg-site-primary h-full origin-left will-change-[width,opacity]"
@@ -220,4 +183,3 @@ export function TopProgressBar() {
     </React.Suspense>
   )
 }
-

@@ -15,7 +15,7 @@ const components = componentsMeta as { totalComponents: number }
 export const COMPONENTS_TOTAL = components.totalComponents
 
 /**
- * Count of ReUI custom primitives - the in-house components not found in base
+ * Count of NeUI custom primitives - the in-house components not found in base
  * shadcn/ui (Data Grid, Kanban, Filters, Stepper, Tree, and more). Hand-
  * maintained: the registry enumerates finer-grained sub-parts, so the build-
  * derived `totalComponents` never matches this marketed number. Update by hand

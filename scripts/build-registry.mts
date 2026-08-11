@@ -107,7 +107,7 @@ function getSvgImportPaths(code: string): string[] {
 function getResolvedNeuiRegistryDeps(code: string): string[] {
   const deps = new Set<string>()
   const registryImportPatterns = [
-    /from\s+["']@\/components\/(?:reui|neui)\/([^"']+)["']/g,
+    /from\s+["']@\/components\/(?:neui|neui)\/([^"']+)["']/g,
     /from\s+["']@\/components\/ui\/([^"']+)["']/g,
   ]
 
@@ -188,7 +188,7 @@ async function getMetadata(base: string): Promise<MetadataData> {
 
   const metadata: Record<string, RegistryItem> = {}
 
-  // Load reui components
+  // Load neui components
   try {
     const mod = await import(`../registry-neui/bases/${base}/neui/_registry.ts`)
     for (const item of mod.neui || []) metadata[item.name] = item
@@ -299,7 +299,7 @@ function transformImportPaths(code: string, base: string): string {
       "@/components/examples/"
     )
     .replace(
-      /@\/registry(?:-neui)?\/bases\/(?:base|radix)\/(?:reui|neui)\//g,
+      /@\/registry(?:-neui)?\/bases\/(?:base|radix)\/(?:neui|neui)\//g,
       "@/components/neui/"
     )
     .replace(
@@ -317,7 +317,7 @@ function transformImportPaths(code: string, base: string): string {
     )
     .replace(/@\/registry\/bases\/(?:base|radix)\/ui\//g, "@/components/ui/")
     .replace(
-      /@\/registry\/bases\/(?:base|radix)\/(?:reui|neui)\//g,
+      /@\/registry\/bases\/(?:base|radix)\/(?:neui|neui)\//g,
       "@/components/neui/"
     )
     .replace(/@\/registry\/bases\/(?:base|radix)\/hooks\//g, "@/hooks/")
@@ -350,12 +350,12 @@ function transformStyleVariants(code: string, style: string): string {
 function getRegistrySource(
   name: string,
   itemType: string
-): { type: "components" | "reui" } {
+): { type: "components" | "neui" } {
   if (name.startsWith("c-")) {
     return { type: "components" }
   }
 
-  return { type: "reui" }
+  return { type: "neui" }
 }
 
 function isStyleAwareRegistryItem(item: RegistryItem): boolean {
@@ -583,7 +583,7 @@ async function main() {
   console.log("Building static registry...")
   console.log(`  Internal registry namespace: ${NEUI_REGISTRY_NAMESPACE}`)
 
-  // Collect all style names. Non-Nova styles only receive style-aware ReUI
+  // Collect all style names. Non-Nova styles only receive style-aware NeUI
   // primitives; components are generated once per base under Nova.
   const styleNames: string[] = []
   for (const base of BASES) {

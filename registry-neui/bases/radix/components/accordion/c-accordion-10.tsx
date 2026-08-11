@@ -11,17 +11,17 @@ const items = [
     value: "item-1",
     trigger: "Can I use this for my project?",
     content:
-      "Yes, you can use ReUI for any of your personal or commercial projects. The library is distributed under the MIT license.",
+      "Yes, you can use NeUI for any of your personal or commercial projects. The library is distributed under the MIT license.",
   },
   {
     value: "item-2",
     trigger: "Is there a Figma file available?",
     content:
-      "We are currently working on a comprehensive Figma design system that will be released soon to all ReUI users.",
+      "We are currently working on a comprehensive Figma design system that will be released soon to all NeUI users.",
   },
   {
     value: "item-3",
-    trigger: "How do I contribute to ReUI?",
+    trigger: "How do I contribute to NeUI?",
     content:
       "You can contribute by reporting bugs, suggesting features, or submitting pull requests on our GitHub repository.",
   },

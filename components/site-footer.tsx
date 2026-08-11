@@ -74,7 +74,7 @@ export function SiteFooter({ className }: { className?: string }) {
         <div className="container-wrapper">
           <div className="container flex flex-col items-center justify-between gap-3 py-3 md:flex-row md:py-3.5">
             <p className="text-site-muted-foreground text-sm">
-              &copy; {currentYear} ReUI. Released under the MIT License.
+              &copy; {currentYear} NeUI. Released under the MIT License.
             </p>
             <div className="flex items-center gap-3">
               <Link
@@ -100,7 +100,7 @@ export function SiteFooter({ className }: { className?: string }) {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-site-muted-foreground hover:text-site-foreground focus-visible:ring-site-ring site-rounded-sm transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
-                    aria-label="View ReUI on Figma"
+                    aria-label="View NeUI on Figma"
                   >
                     <FigmaIcon className="size-[18px]" aria-hidden="true" />
                   </Link>
@@ -112,7 +112,7 @@ export function SiteFooter({ className }: { className?: string }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-site-muted-foreground hover:text-site-foreground focus-visible:ring-site-ring site-rounded-sm inline-flex items-center gap-1.5 transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
-                aria-label="View ReUI on GitHub"
+                aria-label="View NeUI on GitHub"
               >
                 <svg
                   className="size-4"
