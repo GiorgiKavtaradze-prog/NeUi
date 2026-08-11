@@ -2,18 +2,30 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-item-1": () => import("@/registry-neui/bases/base/components/item/c-item-1.tsx"),
-  "c-item-2": () => import("@/registry-neui/bases/base/components/item/c-item-2.tsx"),
-  "c-item-3": () => import("@/registry-neui/bases/base/components/item/c-item-3.tsx"),
-  "c-item-4": () => import("@/registry-neui/bases/base/components/item/c-item-4.tsx"),
-  "c-item-5": () => import("@/registry-neui/bases/base/components/item/c-item-5.tsx"),
-  "c-item-6": () => import("@/registry-neui/bases/base/components/item/c-item-6.tsx"),
-  "c-item-7": () => import("@/registry-neui/bases/base/components/item/c-item-7.tsx"),
-  "c-item-8": () => import("@/registry-neui/bases/base/components/item/c-item-8.tsx"),
-  "c-item-9": () => import("@/registry-neui/bases/base/components/item/c-item-9.tsx"),
-  "c-item-10": () => import("@/registry-neui/bases/base/components/item/c-item-10.tsx"),
-  "c-item-11": () => import("@/registry-neui/bases/base/components/item/c-item-11.tsx"),
-  "c-item-12": () => import("@/registry-neui/bases/base/components/item/c-item-12.tsx"),
+  "c-item-1": () =>
+    import("@/registry-neui/bases/base/components/item/c-item-1.tsx"),
+  "c-item-2": () =>
+    import("@/registry-neui/bases/base/components/item/c-item-2.tsx"),
+  "c-item-3": () =>
+    import("@/registry-neui/bases/base/components/item/c-item-3.tsx"),
+  "c-item-4": () =>
+    import("@/registry-neui/bases/base/components/item/c-item-4.tsx"),
+  "c-item-5": () =>
+    import("@/registry-neui/bases/base/components/item/c-item-5.tsx"),
+  "c-item-6": () =>
+    import("@/registry-neui/bases/base/components/item/c-item-6.tsx"),
+  "c-item-7": () =>
+    import("@/registry-neui/bases/base/components/item/c-item-7.tsx"),
+  "c-item-8": () =>
+    import("@/registry-neui/bases/base/components/item/c-item-8.tsx"),
+  "c-item-9": () =>
+    import("@/registry-neui/bases/base/components/item/c-item-9.tsx"),
+  "c-item-10": () =>
+    import("@/registry-neui/bases/base/components/item/c-item-10.tsx"),
+  "c-item-11": () =>
+    import("@/registry-neui/bases/base/components/item/c-item-11.tsx"),
+  "c-item-12": () =>
+    import("@/registry-neui/bases/base/components/item/c-item-12.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

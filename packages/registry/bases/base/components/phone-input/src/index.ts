@@ -2,14 +2,22 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-phone-input-1": () => import("@/registry-neui/bases/base/components/phone-input/c-phone-input-1.tsx"),
-  "c-phone-input-2": () => import("@/registry-neui/bases/base/components/phone-input/c-phone-input-2.tsx"),
-  "c-phone-input-3": () => import("@/registry-neui/bases/base/components/phone-input/c-phone-input-3.tsx"),
-  "c-phone-input-4": () => import("@/registry-neui/bases/base/components/phone-input/c-phone-input-4.tsx"),
-  "c-phone-input-5": () => import("@/registry-neui/bases/base/components/phone-input/c-phone-input-5.tsx"),
-  "c-phone-input-6": () => import("@/registry-neui/bases/base/components/phone-input/c-phone-input-6.tsx"),
-  "c-phone-input-7": () => import("@/registry-neui/bases/base/components/phone-input/c-phone-input-7.tsx"),
-  "c-phone-input-8": () => import("@/registry-neui/bases/base/components/phone-input/c-phone-input-8.tsx"),
+  "c-phone-input-1": () =>
+    import("@/registry-neui/bases/base/components/phone-input/c-phone-input-1.tsx"),
+  "c-phone-input-2": () =>
+    import("@/registry-neui/bases/base/components/phone-input/c-phone-input-2.tsx"),
+  "c-phone-input-3": () =>
+    import("@/registry-neui/bases/base/components/phone-input/c-phone-input-3.tsx"),
+  "c-phone-input-4": () =>
+    import("@/registry-neui/bases/base/components/phone-input/c-phone-input-4.tsx"),
+  "c-phone-input-5": () =>
+    import("@/registry-neui/bases/base/components/phone-input/c-phone-input-5.tsx"),
+  "c-phone-input-6": () =>
+    import("@/registry-neui/bases/base/components/phone-input/c-phone-input-6.tsx"),
+  "c-phone-input-7": () =>
+    import("@/registry-neui/bases/base/components/phone-input/c-phone-input-7.tsx"),
+  "c-phone-input-8": () =>
+    import("@/registry-neui/bases/base/components/phone-input/c-phone-input-8.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

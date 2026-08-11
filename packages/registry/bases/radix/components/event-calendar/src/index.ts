@@ -2,11 +2,16 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-event-calendar-1": () => import("@/registry-neui/bases/radix/components/event-calendar/c-event-calendar-1.tsx"),
-  "c-event-calendar-2": () => import("@/registry-neui/bases/radix/components/event-calendar/c-event-calendar-2.tsx"),
-  "c-event-calendar-3": () => import("@/registry-neui/bases/radix/components/event-calendar/c-event-calendar-3.tsx"),
-  "c-event-calendar-4": () => import("@/registry-neui/bases/radix/components/event-calendar/c-event-calendar-4.tsx"),
-  "c-event-calendar-5": () => import("@/registry-neui/bases/radix/components/event-calendar/c-event-calendar-5.tsx"),
+  "c-event-calendar-1": () =>
+    import("@/registry-neui/bases/radix/components/event-calendar/c-event-calendar-1.tsx"),
+  "c-event-calendar-2": () =>
+    import("@/registry-neui/bases/radix/components/event-calendar/c-event-calendar-2.tsx"),
+  "c-event-calendar-3": () =>
+    import("@/registry-neui/bases/radix/components/event-calendar/c-event-calendar-3.tsx"),
+  "c-event-calendar-4": () =>
+    import("@/registry-neui/bases/radix/components/event-calendar/c-event-calendar-4.tsx"),
+  "c-event-calendar-5": () =>
+    import("@/registry-neui/bases/radix/components/event-calendar/c-event-calendar-5.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

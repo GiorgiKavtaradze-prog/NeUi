@@ -2,11 +2,16 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-drawer-1": () => import("@/registry-neui/bases/base/components/drawer/c-drawer-1.tsx"),
-  "c-drawer-2": () => import("@/registry-neui/bases/base/components/drawer/c-drawer-2.tsx"),
-  "c-drawer-3": () => import("@/registry-neui/bases/base/components/drawer/c-drawer-3.tsx"),
-  "c-drawer-4": () => import("@/registry-neui/bases/base/components/drawer/c-drawer-4.tsx"),
-  "c-drawer-5": () => import("@/registry-neui/bases/base/components/drawer/c-drawer-5.tsx"),
+  "c-drawer-1": () =>
+    import("@/registry-neui/bases/base/components/drawer/c-drawer-1.tsx"),
+  "c-drawer-2": () =>
+    import("@/registry-neui/bases/base/components/drawer/c-drawer-2.tsx"),
+  "c-drawer-3": () =>
+    import("@/registry-neui/bases/base/components/drawer/c-drawer-3.tsx"),
+  "c-drawer-4": () =>
+    import("@/registry-neui/bases/base/components/drawer/c-drawer-4.tsx"),
+  "c-drawer-5": () =>
+    import("@/registry-neui/bases/base/components/drawer/c-drawer-5.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

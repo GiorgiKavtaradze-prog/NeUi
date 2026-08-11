@@ -2,16 +2,26 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-collapsible-1": () => import("@/registry-neui/bases/radix/components/collapsible/c-collapsible-1.tsx"),
-  "c-collapsible-2": () => import("@/registry-neui/bases/radix/components/collapsible/c-collapsible-2.tsx"),
-  "c-collapsible-3": () => import("@/registry-neui/bases/radix/components/collapsible/c-collapsible-3.tsx"),
-  "c-collapsible-4": () => import("@/registry-neui/bases/radix/components/collapsible/c-collapsible-4.tsx"),
-  "c-collapsible-5": () => import("@/registry-neui/bases/radix/components/collapsible/c-collapsible-5.tsx"),
-  "c-collapsible-6": () => import("@/registry-neui/bases/radix/components/collapsible/c-collapsible-6.tsx"),
-  "c-collapsible-7": () => import("@/registry-neui/bases/radix/components/collapsible/c-collapsible-7.tsx"),
-  "c-collapsible-8": () => import("@/registry-neui/bases/radix/components/collapsible/c-collapsible-8.tsx"),
-  "c-collapsible-9": () => import("@/registry-neui/bases/radix/components/collapsible/c-collapsible-9.tsx"),
-  "c-collapsible-10": () => import("@/registry-neui/bases/radix/components/collapsible/c-collapsible-10.tsx"),
+  "c-collapsible-1": () =>
+    import("@/registry-neui/bases/radix/components/collapsible/c-collapsible-1.tsx"),
+  "c-collapsible-2": () =>
+    import("@/registry-neui/bases/radix/components/collapsible/c-collapsible-2.tsx"),
+  "c-collapsible-3": () =>
+    import("@/registry-neui/bases/radix/components/collapsible/c-collapsible-3.tsx"),
+  "c-collapsible-4": () =>
+    import("@/registry-neui/bases/radix/components/collapsible/c-collapsible-4.tsx"),
+  "c-collapsible-5": () =>
+    import("@/registry-neui/bases/radix/components/collapsible/c-collapsible-5.tsx"),
+  "c-collapsible-6": () =>
+    import("@/registry-neui/bases/radix/components/collapsible/c-collapsible-6.tsx"),
+  "c-collapsible-7": () =>
+    import("@/registry-neui/bases/radix/components/collapsible/c-collapsible-7.tsx"),
+  "c-collapsible-8": () =>
+    import("@/registry-neui/bases/radix/components/collapsible/c-collapsible-8.tsx"),
+  "c-collapsible-9": () =>
+    import("@/registry-neui/bases/radix/components/collapsible/c-collapsible-9.tsx"),
+  "c-collapsible-10": () =>
+    import("@/registry-neui/bases/radix/components/collapsible/c-collapsible-10.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

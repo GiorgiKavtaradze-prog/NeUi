@@ -2,10 +2,14 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-date-selector-1": () => import("@/registry-neui/bases/base/components/date-selector/c-date-selector-1.tsx"),
-  "c-date-selector-2": () => import("@/registry-neui/bases/base/components/date-selector/c-date-selector-2.tsx"),
-  "c-date-selector-3": () => import("@/registry-neui/bases/base/components/date-selector/c-date-selector-3.tsx"),
-  "c-date-selector-4": () => import("@/registry-neui/bases/base/components/date-selector/c-date-selector-4.tsx"),
+  "c-date-selector-1": () =>
+    import("@/registry-neui/bases/base/components/date-selector/c-date-selector-1.tsx"),
+  "c-date-selector-2": () =>
+    import("@/registry-neui/bases/base/components/date-selector/c-date-selector-2.tsx"),
+  "c-date-selector-3": () =>
+    import("@/registry-neui/bases/base/components/date-selector/c-date-selector-3.tsx"),
+  "c-date-selector-4": () =>
+    import("@/registry-neui/bases/base/components/date-selector/c-date-selector-4.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

@@ -2,14 +2,22 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-hover-card-1": () => import("@/registry-neui/bases/radix/components/hover-card/c-hover-card-1.tsx"),
-  "c-hover-card-2": () => import("@/registry-neui/bases/radix/components/hover-card/c-hover-card-2.tsx"),
-  "c-hover-card-3": () => import("@/registry-neui/bases/radix/components/hover-card/c-hover-card-3.tsx"),
-  "c-hover-card-4": () => import("@/registry-neui/bases/radix/components/hover-card/c-hover-card-4.tsx"),
-  "c-hover-card-5": () => import("@/registry-neui/bases/radix/components/hover-card/c-hover-card-5.tsx"),
-  "c-hover-card-6": () => import("@/registry-neui/bases/radix/components/hover-card/c-hover-card-6.tsx"),
-  "c-hover-card-7": () => import("@/registry-neui/bases/radix/components/hover-card/c-hover-card-7.tsx"),
-  "c-hover-card-8": () => import("@/registry-neui/bases/radix/components/hover-card/c-hover-card-8.tsx"),
+  "c-hover-card-1": () =>
+    import("@/registry-neui/bases/radix/components/hover-card/c-hover-card-1.tsx"),
+  "c-hover-card-2": () =>
+    import("@/registry-neui/bases/radix/components/hover-card/c-hover-card-2.tsx"),
+  "c-hover-card-3": () =>
+    import("@/registry-neui/bases/radix/components/hover-card/c-hover-card-3.tsx"),
+  "c-hover-card-4": () =>
+    import("@/registry-neui/bases/radix/components/hover-card/c-hover-card-4.tsx"),
+  "c-hover-card-5": () =>
+    import("@/registry-neui/bases/radix/components/hover-card/c-hover-card-5.tsx"),
+  "c-hover-card-6": () =>
+    import("@/registry-neui/bases/radix/components/hover-card/c-hover-card-6.tsx"),
+  "c-hover-card-7": () =>
+    import("@/registry-neui/bases/radix/components/hover-card/c-hover-card-7.tsx"),
+  "c-hover-card-8": () =>
+    import("@/registry-neui/bases/radix/components/hover-card/c-hover-card-8.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

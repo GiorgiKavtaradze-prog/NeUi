@@ -2,12 +2,18 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-kanban-1": () => import("@/registry-neui/bases/base/components/kanban/c-kanban-1.tsx"),
-  "c-kanban-2": () => import("@/registry-neui/bases/base/components/kanban/c-kanban-2.tsx"),
-  "c-kanban-3": () => import("@/registry-neui/bases/base/components/kanban/c-kanban-3.tsx"),
-  "c-kanban-4": () => import("@/registry-neui/bases/base/components/kanban/c-kanban-4.tsx"),
-  "c-kanban-5": () => import("@/registry-neui/bases/base/components/kanban/c-kanban-5.tsx"),
-  "c-kanban-6": () => import("@/registry-neui/bases/base/components/kanban/c-kanban-6.tsx"),
+  "c-kanban-1": () =>
+    import("@/registry-neui/bases/base/components/kanban/c-kanban-1.tsx"),
+  "c-kanban-2": () =>
+    import("@/registry-neui/bases/base/components/kanban/c-kanban-2.tsx"),
+  "c-kanban-3": () =>
+    import("@/registry-neui/bases/base/components/kanban/c-kanban-3.tsx"),
+  "c-kanban-4": () =>
+    import("@/registry-neui/bases/base/components/kanban/c-kanban-4.tsx"),
+  "c-kanban-5": () =>
+    import("@/registry-neui/bases/base/components/kanban/c-kanban-5.tsx"),
+  "c-kanban-6": () =>
+    import("@/registry-neui/bases/base/components/kanban/c-kanban-6.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

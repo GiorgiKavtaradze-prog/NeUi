@@ -2,12 +2,18 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-textarea-1": () => import("@/registry-neui/bases/base/components/textarea/c-textarea-1.tsx"),
-  "c-textarea-2": () => import("@/registry-neui/bases/base/components/textarea/c-textarea-2.tsx"),
-  "c-textarea-3": () => import("@/registry-neui/bases/base/components/textarea/c-textarea-3.tsx"),
-  "c-textarea-4": () => import("@/registry-neui/bases/base/components/textarea/c-textarea-4.tsx"),
-  "c-textarea-5": () => import("@/registry-neui/bases/base/components/textarea/c-textarea-5.tsx"),
-  "c-textarea-6": () => import("@/registry-neui/bases/base/components/textarea/c-textarea-6.tsx"),
+  "c-textarea-1": () =>
+    import("@/registry-neui/bases/base/components/textarea/c-textarea-1.tsx"),
+  "c-textarea-2": () =>
+    import("@/registry-neui/bases/base/components/textarea/c-textarea-2.tsx"),
+  "c-textarea-3": () =>
+    import("@/registry-neui/bases/base/components/textarea/c-textarea-3.tsx"),
+  "c-textarea-4": () =>
+    import("@/registry-neui/bases/base/components/textarea/c-textarea-4.tsx"),
+  "c-textarea-5": () =>
+    import("@/registry-neui/bases/base/components/textarea/c-textarea-5.tsx"),
+  "c-textarea-6": () =>
+    import("@/registry-neui/bases/base/components/textarea/c-textarea-6.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

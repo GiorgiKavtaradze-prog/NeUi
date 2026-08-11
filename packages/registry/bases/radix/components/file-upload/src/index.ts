@@ -2,16 +2,26 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-file-upload-1": () => import("@/registry-neui/bases/radix/components/file-upload/c-file-upload-1.tsx"),
-  "c-file-upload-2": () => import("@/registry-neui/bases/radix/components/file-upload/c-file-upload-2.tsx"),
-  "c-file-upload-3": () => import("@/registry-neui/bases/radix/components/file-upload/c-file-upload-3.tsx"),
-  "c-file-upload-4": () => import("@/registry-neui/bases/radix/components/file-upload/c-file-upload-4.tsx"),
-  "c-file-upload-5": () => import("@/registry-neui/bases/radix/components/file-upload/c-file-upload-5.tsx"),
-  "c-file-upload-6": () => import("@/registry-neui/bases/radix/components/file-upload/c-file-upload-6.tsx"),
-  "c-file-upload-7": () => import("@/registry-neui/bases/radix/components/file-upload/c-file-upload-7.tsx"),
-  "c-file-upload-8": () => import("@/registry-neui/bases/radix/components/file-upload/c-file-upload-8.tsx"),
-  "c-file-upload-9": () => import("@/registry-neui/bases/radix/components/file-upload/c-file-upload-9.tsx"),
-  "c-file-upload-10": () => import("@/registry-neui/bases/radix/components/file-upload/c-file-upload-10.tsx"),
+  "c-file-upload-1": () =>
+    import("@/registry-neui/bases/radix/components/file-upload/c-file-upload-1.tsx"),
+  "c-file-upload-2": () =>
+    import("@/registry-neui/bases/radix/components/file-upload/c-file-upload-2.tsx"),
+  "c-file-upload-3": () =>
+    import("@/registry-neui/bases/radix/components/file-upload/c-file-upload-3.tsx"),
+  "c-file-upload-4": () =>
+    import("@/registry-neui/bases/radix/components/file-upload/c-file-upload-4.tsx"),
+  "c-file-upload-5": () =>
+    import("@/registry-neui/bases/radix/components/file-upload/c-file-upload-5.tsx"),
+  "c-file-upload-6": () =>
+    import("@/registry-neui/bases/radix/components/file-upload/c-file-upload-6.tsx"),
+  "c-file-upload-7": () =>
+    import("@/registry-neui/bases/radix/components/file-upload/c-file-upload-7.tsx"),
+  "c-file-upload-8": () =>
+    import("@/registry-neui/bases/radix/components/file-upload/c-file-upload-8.tsx"),
+  "c-file-upload-9": () =>
+    import("@/registry-neui/bases/radix/components/file-upload/c-file-upload-9.tsx"),
+  "c-file-upload-10": () =>
+    import("@/registry-neui/bases/radix/components/file-upload/c-file-upload-10.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

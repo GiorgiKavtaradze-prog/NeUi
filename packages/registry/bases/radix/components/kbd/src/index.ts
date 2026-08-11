@@ -2,12 +2,18 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-kbd-1": () => import("@/registry-neui/bases/radix/components/kbd/c-kbd-1.tsx"),
-  "c-kbd-2": () => import("@/registry-neui/bases/radix/components/kbd/c-kbd-2.tsx"),
-  "c-kbd-3": () => import("@/registry-neui/bases/radix/components/kbd/c-kbd-3.tsx"),
-  "c-kbd-4": () => import("@/registry-neui/bases/radix/components/kbd/c-kbd-4.tsx"),
-  "c-kbd-5": () => import("@/registry-neui/bases/radix/components/kbd/c-kbd-5.tsx"),
-  "c-kbd-6": () => import("@/registry-neui/bases/radix/components/kbd/c-kbd-6.tsx"),
+  "c-kbd-1": () =>
+    import("@/registry-neui/bases/radix/components/kbd/c-kbd-1.tsx"),
+  "c-kbd-2": () =>
+    import("@/registry-neui/bases/radix/components/kbd/c-kbd-2.tsx"),
+  "c-kbd-3": () =>
+    import("@/registry-neui/bases/radix/components/kbd/c-kbd-3.tsx"),
+  "c-kbd-4": () =>
+    import("@/registry-neui/bases/radix/components/kbd/c-kbd-4.tsx"),
+  "c-kbd-5": () =>
+    import("@/registry-neui/bases/radix/components/kbd/c-kbd-5.tsx"),
+  "c-kbd-6": () =>
+    import("@/registry-neui/bases/radix/components/kbd/c-kbd-6.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

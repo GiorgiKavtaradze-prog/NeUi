@@ -2,14 +2,22 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-progress-1": () => import("@/registry-neui/bases/base/components/progress/c-progress-1.tsx"),
-  "c-progress-2": () => import("@/registry-neui/bases/base/components/progress/c-progress-2.tsx"),
-  "c-progress-3": () => import("@/registry-neui/bases/base/components/progress/c-progress-3.tsx"),
-  "c-progress-4": () => import("@/registry-neui/bases/base/components/progress/c-progress-4.tsx"),
-  "c-progress-5": () => import("@/registry-neui/bases/base/components/progress/c-progress-5.tsx"),
-  "c-progress-6": () => import("@/registry-neui/bases/base/components/progress/c-progress-6.tsx"),
-  "c-progress-7": () => import("@/registry-neui/bases/base/components/progress/c-progress-7.tsx"),
-  "c-progress-8": () => import("@/registry-neui/bases/base/components/progress/c-progress-8.tsx"),
+  "c-progress-1": () =>
+    import("@/registry-neui/bases/base/components/progress/c-progress-1.tsx"),
+  "c-progress-2": () =>
+    import("@/registry-neui/bases/base/components/progress/c-progress-2.tsx"),
+  "c-progress-3": () =>
+    import("@/registry-neui/bases/base/components/progress/c-progress-3.tsx"),
+  "c-progress-4": () =>
+    import("@/registry-neui/bases/base/components/progress/c-progress-4.tsx"),
+  "c-progress-5": () =>
+    import("@/registry-neui/bases/base/components/progress/c-progress-5.tsx"),
+  "c-progress-6": () =>
+    import("@/registry-neui/bases/base/components/progress/c-progress-6.tsx"),
+  "c-progress-7": () =>
+    import("@/registry-neui/bases/base/components/progress/c-progress-7.tsx"),
+  "c-progress-8": () =>
+    import("@/registry-neui/bases/base/components/progress/c-progress-8.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

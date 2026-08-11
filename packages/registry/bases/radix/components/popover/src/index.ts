@@ -2,17 +2,28 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-popover-1": () => import("@/registry-neui/bases/radix/components/popover/c-popover-1.tsx"),
-  "c-popover-2": () => import("@/registry-neui/bases/radix/components/popover/c-popover-2.tsx"),
-  "c-popover-3": () => import("@/registry-neui/bases/radix/components/popover/c-popover-3.tsx"),
-  "c-popover-4": () => import("@/registry-neui/bases/radix/components/popover/c-popover-4.tsx"),
-  "c-popover-5": () => import("@/registry-neui/bases/radix/components/popover/c-popover-5.tsx"),
-  "c-popover-6": () => import("@/registry-neui/bases/radix/components/popover/c-popover-6.tsx"),
-  "c-popover-7": () => import("@/registry-neui/bases/radix/components/popover/c-popover-7.tsx"),
-  "c-popover-8": () => import("@/registry-neui/bases/radix/components/popover/c-popover-8.tsx"),
-  "c-popover-9": () => import("@/registry-neui/bases/radix/components/popover/c-popover-9.tsx"),
-  "c-popover-10": () => import("@/registry-neui/bases/radix/components/popover/c-popover-10.tsx"),
-  "c-popover-11": () => import("@/registry-neui/bases/radix/components/popover/c-popover-11.tsx"),
+  "c-popover-1": () =>
+    import("@/registry-neui/bases/radix/components/popover/c-popover-1.tsx"),
+  "c-popover-2": () =>
+    import("@/registry-neui/bases/radix/components/popover/c-popover-2.tsx"),
+  "c-popover-3": () =>
+    import("@/registry-neui/bases/radix/components/popover/c-popover-3.tsx"),
+  "c-popover-4": () =>
+    import("@/registry-neui/bases/radix/components/popover/c-popover-4.tsx"),
+  "c-popover-5": () =>
+    import("@/registry-neui/bases/radix/components/popover/c-popover-5.tsx"),
+  "c-popover-6": () =>
+    import("@/registry-neui/bases/radix/components/popover/c-popover-6.tsx"),
+  "c-popover-7": () =>
+    import("@/registry-neui/bases/radix/components/popover/c-popover-7.tsx"),
+  "c-popover-8": () =>
+    import("@/registry-neui/bases/radix/components/popover/c-popover-8.tsx"),
+  "c-popover-9": () =>
+    import("@/registry-neui/bases/radix/components/popover/c-popover-9.tsx"),
+  "c-popover-10": () =>
+    import("@/registry-neui/bases/radix/components/popover/c-popover-10.tsx"),
+  "c-popover-11": () =>
+    import("@/registry-neui/bases/radix/components/popover/c-popover-11.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

@@ -2,22 +2,38 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-toggle-group-1": () => import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-1.tsx"),
-  "c-toggle-group-2": () => import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-2.tsx"),
-  "c-toggle-group-3": () => import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-3.tsx"),
-  "c-toggle-group-4": () => import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-4.tsx"),
-  "c-toggle-group-5": () => import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-5.tsx"),
-  "c-toggle-group-6": () => import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-6.tsx"),
-  "c-toggle-group-7": () => import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-7.tsx"),
-  "c-toggle-group-8": () => import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-8.tsx"),
-  "c-toggle-group-9": () => import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-9.tsx"),
-  "c-toggle-group-10": () => import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-10.tsx"),
-  "c-toggle-group-11": () => import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-11.tsx"),
-  "c-toggle-group-12": () => import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-12.tsx"),
-  "c-toggle-group-13": () => import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-13.tsx"),
-  "c-toggle-group-14": () => import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-14.tsx"),
-  "c-toggle-group-15": () => import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-15.tsx"),
-  "c-toggle-group-16": () => import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-16.tsx"),
+  "c-toggle-group-1": () =>
+    import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-1.tsx"),
+  "c-toggle-group-2": () =>
+    import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-2.tsx"),
+  "c-toggle-group-3": () =>
+    import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-3.tsx"),
+  "c-toggle-group-4": () =>
+    import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-4.tsx"),
+  "c-toggle-group-5": () =>
+    import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-5.tsx"),
+  "c-toggle-group-6": () =>
+    import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-6.tsx"),
+  "c-toggle-group-7": () =>
+    import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-7.tsx"),
+  "c-toggle-group-8": () =>
+    import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-8.tsx"),
+  "c-toggle-group-9": () =>
+    import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-9.tsx"),
+  "c-toggle-group-10": () =>
+    import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-10.tsx"),
+  "c-toggle-group-11": () =>
+    import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-11.tsx"),
+  "c-toggle-group-12": () =>
+    import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-12.tsx"),
+  "c-toggle-group-13": () =>
+    import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-13.tsx"),
+  "c-toggle-group-14": () =>
+    import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-14.tsx"),
+  "c-toggle-group-15": () =>
+    import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-15.tsx"),
+  "c-toggle-group-16": () =>
+    import("@/registry-neui/bases/radix/components/toggle-group/c-toggle-group-16.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

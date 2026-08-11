@@ -2,16 +2,26 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-skeleton-1": () => import("@/registry-neui/bases/base/components/skeleton/c-skeleton-1.tsx"),
-  "c-skeleton-2": () => import("@/registry-neui/bases/base/components/skeleton/c-skeleton-2.tsx"),
-  "c-skeleton-3": () => import("@/registry-neui/bases/base/components/skeleton/c-skeleton-3.tsx"),
-  "c-skeleton-4": () => import("@/registry-neui/bases/base/components/skeleton/c-skeleton-4.tsx"),
-  "c-skeleton-5": () => import("@/registry-neui/bases/base/components/skeleton/c-skeleton-5.tsx"),
-  "c-skeleton-6": () => import("@/registry-neui/bases/base/components/skeleton/c-skeleton-6.tsx"),
-  "c-skeleton-7": () => import("@/registry-neui/bases/base/components/skeleton/c-skeleton-7.tsx"),
-  "c-skeleton-8": () => import("@/registry-neui/bases/base/components/skeleton/c-skeleton-8.tsx"),
-  "c-skeleton-9": () => import("@/registry-neui/bases/base/components/skeleton/c-skeleton-9.tsx"),
-  "c-skeleton-10": () => import("@/registry-neui/bases/base/components/skeleton/c-skeleton-10.tsx"),
+  "c-skeleton-1": () =>
+    import("@/registry-neui/bases/base/components/skeleton/c-skeleton-1.tsx"),
+  "c-skeleton-2": () =>
+    import("@/registry-neui/bases/base/components/skeleton/c-skeleton-2.tsx"),
+  "c-skeleton-3": () =>
+    import("@/registry-neui/bases/base/components/skeleton/c-skeleton-3.tsx"),
+  "c-skeleton-4": () =>
+    import("@/registry-neui/bases/base/components/skeleton/c-skeleton-4.tsx"),
+  "c-skeleton-5": () =>
+    import("@/registry-neui/bases/base/components/skeleton/c-skeleton-5.tsx"),
+  "c-skeleton-6": () =>
+    import("@/registry-neui/bases/base/components/skeleton/c-skeleton-6.tsx"),
+  "c-skeleton-7": () =>
+    import("@/registry-neui/bases/base/components/skeleton/c-skeleton-7.tsx"),
+  "c-skeleton-8": () =>
+    import("@/registry-neui/bases/base/components/skeleton/c-skeleton-8.tsx"),
+  "c-skeleton-9": () =>
+    import("@/registry-neui/bases/base/components/skeleton/c-skeleton-9.tsx"),
+  "c-skeleton-10": () =>
+    import("@/registry-neui/bases/base/components/skeleton/c-skeleton-10.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

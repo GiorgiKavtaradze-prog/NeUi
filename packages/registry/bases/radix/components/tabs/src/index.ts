@@ -2,15 +2,24 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-tabs-1": () => import("@/registry-neui/bases/radix/components/tabs/c-tabs-1.tsx"),
-  "c-tabs-2": () => import("@/registry-neui/bases/radix/components/tabs/c-tabs-2.tsx"),
-  "c-tabs-3": () => import("@/registry-neui/bases/radix/components/tabs/c-tabs-3.tsx"),
-  "c-tabs-4": () => import("@/registry-neui/bases/radix/components/tabs/c-tabs-4.tsx"),
-  "c-tabs-5": () => import("@/registry-neui/bases/radix/components/tabs/c-tabs-5.tsx"),
-  "c-tabs-6": () => import("@/registry-neui/bases/radix/components/tabs/c-tabs-6.tsx"),
-  "c-tabs-7": () => import("@/registry-neui/bases/radix/components/tabs/c-tabs-7.tsx"),
-  "c-tabs-8": () => import("@/registry-neui/bases/radix/components/tabs/c-tabs-8.tsx"),
-  "c-tabs-9": () => import("@/registry-neui/bases/radix/components/tabs/c-tabs-9.tsx"),
+  "c-tabs-1": () =>
+    import("@/registry-neui/bases/radix/components/tabs/c-tabs-1.tsx"),
+  "c-tabs-2": () =>
+    import("@/registry-neui/bases/radix/components/tabs/c-tabs-2.tsx"),
+  "c-tabs-3": () =>
+    import("@/registry-neui/bases/radix/components/tabs/c-tabs-3.tsx"),
+  "c-tabs-4": () =>
+    import("@/registry-neui/bases/radix/components/tabs/c-tabs-4.tsx"),
+  "c-tabs-5": () =>
+    import("@/registry-neui/bases/radix/components/tabs/c-tabs-5.tsx"),
+  "c-tabs-6": () =>
+    import("@/registry-neui/bases/radix/components/tabs/c-tabs-6.tsx"),
+  "c-tabs-7": () =>
+    import("@/registry-neui/bases/radix/components/tabs/c-tabs-7.tsx"),
+  "c-tabs-8": () =>
+    import("@/registry-neui/bases/radix/components/tabs/c-tabs-8.tsx"),
+  "c-tabs-9": () =>
+    import("@/registry-neui/bases/radix/components/tabs/c-tabs-9.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

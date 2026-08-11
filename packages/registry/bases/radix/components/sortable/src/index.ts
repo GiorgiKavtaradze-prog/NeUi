@@ -2,14 +2,22 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-sortable-1": () => import("@/registry-neui/bases/radix/components/sortable/c-sortable-1.tsx"),
-  "c-sortable-2": () => import("@/registry-neui/bases/radix/components/sortable/c-sortable-2.tsx"),
-  "c-sortable-3": () => import("@/registry-neui/bases/radix/components/sortable/c-sortable-3.tsx"),
-  "c-sortable-4": () => import("@/registry-neui/bases/radix/components/sortable/c-sortable-4.tsx"),
-  "c-sortable-5": () => import("@/registry-neui/bases/radix/components/sortable/c-sortable-5.tsx"),
-  "c-sortable-6": () => import("@/registry-neui/bases/radix/components/sortable/c-sortable-6.tsx"),
-  "c-sortable-7": () => import("@/registry-neui/bases/radix/components/sortable/c-sortable-7.tsx"),
-  "c-sortable-8": () => import("@/registry-neui/bases/radix/components/sortable/c-sortable-8.tsx"),
+  "c-sortable-1": () =>
+    import("@/registry-neui/bases/radix/components/sortable/c-sortable-1.tsx"),
+  "c-sortable-2": () =>
+    import("@/registry-neui/bases/radix/components/sortable/c-sortable-2.tsx"),
+  "c-sortable-3": () =>
+    import("@/registry-neui/bases/radix/components/sortable/c-sortable-3.tsx"),
+  "c-sortable-4": () =>
+    import("@/registry-neui/bases/radix/components/sortable/c-sortable-4.tsx"),
+  "c-sortable-5": () =>
+    import("@/registry-neui/bases/radix/components/sortable/c-sortable-5.tsx"),
+  "c-sortable-6": () =>
+    import("@/registry-neui/bases/radix/components/sortable/c-sortable-6.tsx"),
+  "c-sortable-7": () =>
+    import("@/registry-neui/bases/radix/components/sortable/c-sortable-7.tsx"),
+  "c-sortable-8": () =>
+    import("@/registry-neui/bases/radix/components/sortable/c-sortable-8.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders
