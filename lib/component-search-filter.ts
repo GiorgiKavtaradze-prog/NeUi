@@ -47,4 +47,3 @@ export const normalizePatternSearchQuery = normalizeComponentSearchQuery
 export const hasActivePatternSearch = hasActiveComponentSearch
 /** @deprecated Use filterComponentsBySearchQuery. */
 export const filterPatternsBySearchQuery = filterComponentsBySearchQuery
-

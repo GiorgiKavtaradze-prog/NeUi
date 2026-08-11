@@ -23,4 +23,3 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
 }
 
 export const mdxComponents = getMDXComponents()
-

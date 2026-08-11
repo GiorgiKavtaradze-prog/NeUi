@@ -38,4 +38,3 @@ export const BASES: z.infer<typeof registryItemSchema>[] = [
 ]
 
 export type Base = (typeof BASES)[number]
-

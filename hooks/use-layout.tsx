@@ -158,4 +158,3 @@ const LayoutProvider = (props: LayoutProviderProps) => {
 }
 
 export { useLayout, LayoutProvider }
-

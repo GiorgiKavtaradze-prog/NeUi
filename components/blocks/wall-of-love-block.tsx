@@ -449,7 +449,6 @@ export function WallOfLoveBlock() {
       className="relative overflow-hidden py-12 lg:py-24"
       style={{ contentVisibility: "auto", containIntrinsicSize: "2400px" }}
     >
-      {/* Section heading halo: shared grid texture with an early top fade. */}
       <PageGridBackdrop variant="section" />
       <div className="relative z-10 container">
         <Heading
@@ -466,8 +465,6 @@ export function WallOfLoveBlock() {
                 </p>
                 <div className="mt-auto flex items-center gap-2.5 pt-2">
                   <Avatar className="border-site-border h-9 w-9 border">
-                    {/* Only render the image when we have a resolved URL;
-                          an empty src would otherwise re-request the page. */}
                     {testimonial.author.avatar ? (
                       <AvatarImage
                         src={testimonial.author.avatar}
@@ -505,4 +502,3 @@ export function WallOfLoveBlock() {
     </section>
   )
 }
-

@@ -33,7 +33,6 @@ const canonicalComponentDocRedirectPattern =
 const legacyComponentCategoryRedirectPattern =
   "accordion|alert-dialog|aspect-ratio|avatar|breadcrumb|button|button-group|calendar|card|carousel|chart|checkbox|collapsible|combobox|command|context-menu|dialog|drawer|dropdown-menu|empty|field|hover-card|input|input-group|input-otp|item|kbd|label|menubar|native-select|navigation-menu|pagination|popover|progress|radio-group|resizable|scroll-area|select|separator|sheet|skeleton|slider|sonner|spinner|switch|table|tabs|textarea|toggle|toggle-group|tooltip"
 
-// Barrel packages worth optimizing (none are in Next's default list).
 const optimizePackageImports = [
   "lucide-react",
   "@tabler/icons-react",
@@ -46,8 +45,6 @@ const optimizePackageImports = [
   "jotai",
 ]
 
-// Trace only the component registry metadata + generated component source that
-// runtime code actually reads (listing, search, docs source rendering).
 const componentMetadataTracingGlobs = [
   "./registry-neui/_meta/components/**/*.json",
 ]
@@ -63,8 +60,6 @@ const nextConfig = {
   cacheComponents: true,
   deploymentId:
     registryDeploymentId === "local" ? undefined : registryDeploymentId,
-  // recharts 3.x renders empty under Next's production optimizer unless it is
-  // transpiled through Next's own pipeline. Do not remove.
   transpilePackages: ["recharts"],
   devIndicators: false,
   skipTrailingSlashRedirect: true,
@@ -73,8 +68,6 @@ const nextConfig = {
     NEXT_PUBLIC_VERCEL_DEPLOYMENT_ID: registryDeploymentId,
   },
   typescript: {
-    // The upstream source project also ships with this enabled; the app builds
-    // and runs, and the vendored component packages carry their own type setup.
     ignoreBuildErrors: true,
   },
   outputFileTracingIncludes: {
@@ -156,8 +149,6 @@ const nextConfig = {
             key: "Content-Security-Policy",
             value: [
               "default-src 'self'",
-              // Production only needs WASM compilation for the client-side
-              // shiki highlighter (code views); dev also needs 'unsafe-eval'.
               `script-src 'self' 'unsafe-inline' ${isDev ? "'unsafe-eval'" : "'wasm-unsafe-eval'"} https://*.vercel-scripts.com https://vercel.live https://va.vercel-scripts.com`,
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
               `img-src 'self' data: blob: https:${localImg}`,
@@ -176,13 +167,16 @@ const nextConfig = {
   },
   redirects() {
     return [
-      // shadcn-muscle-memory + legacy docs URLs.
       {
         source: "/docs/installation",
         destination: "/docs/get-started",
         permanent: true,
       },
-      { source: "/docs/cli", destination: "/docs/get-started", permanent: true },
+      {
+        source: "/docs/cli",
+        destination: "/docs/get-started",
+        permanent: true,
+      },
       {
         source: "/docs/:path*.mdx",
         destination: "/docs/:path*.md",
@@ -223,7 +217,6 @@ const nextConfig = {
         destination: "/components/:path",
         permanent: true,
       },
-      // Map the shadcn CLI style aliases onto the canonical base-nova style.
       ...createVersionedRegistryRedirects(
         "/r/styles/default/:path*",
         "/r/styles/base-nova/:path*"
@@ -240,9 +233,6 @@ const nextConfig = {
         "/r/:name.json",
         "/r/styles/base-nova/:name.json"
       ),
-      // Map the shadcn CLI namespace form `/r/<style>/<name>.json` onto the
-      // canonical `/r/styles/<style>/<name>.json`. The `(?!styles/)` lookahead
-      // keeps already-canonical paths from doubling their segment.
       ...createVersionedRegistryRedirects(
         "/r/:style((?!styles/)[^/]+)/:name.json",
         "/r/styles/:style/:name.json"
@@ -254,4 +244,3 @@ const nextConfig = {
 const withMDX = createMDX({})
 
 export default withMDX(nextConfig)
-

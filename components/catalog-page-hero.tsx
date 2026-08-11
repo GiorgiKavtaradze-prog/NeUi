@@ -11,10 +11,6 @@ interface CatalogPageHeroProps {
   subtitle?: ReactNode
   children?: ReactNode
   titleId?: string
-  /**
-   * Text alignment. The components catalog uses the default left-aligned
-   * layout; `"center"` centers the whole stack.
-   */
   align?: "left" | "center"
   className?: string
 }
@@ -69,7 +65,7 @@ export function CatalogPageHero({
           {count != null ? (
             <Badge
               variant="outline"
-              className="!site-rounded-full rounded-full px-2.5 py-0.5 text-xs tabular-nums"
+              className="rounded-full px-2.5 py-0.5 text-xs tabular-nums"
             >
               {count}
             </Badge>
@@ -94,4 +90,3 @@ export function CatalogPageHero({
     </section>
   )
 }
-

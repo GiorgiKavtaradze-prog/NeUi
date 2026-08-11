@@ -122,7 +122,7 @@ function AutocompleteList({
       <AutocompletePrimitive.List
         data-slot="autocomplete-list"
         className={cn(
-          "not-empty:px-1 not-empty:py-1 not-empty:scroll-py-1 in-data-has-overflow-y:me-3",
+          "not-empty:scroll-py-1 not-empty:px-1 not-empty:py-1 in-data-has-overflow-y:me-3",
           className
         )}
         {...props}
@@ -166,7 +166,7 @@ function AutocompleteItem({
         "text-foreground data-highlighted:text-foreground data-highlighted:before:bg-accent gap-1.5",
         "style-vega:rounded-sm style-nova:rounded-md style-maia:rounded-xl style-lyra:rounded-none style-mira:rounded-md style-luma:rounded-2xl style-rhea:rounded-2xl style-sera:rounded-none",
         "style-vega:data-highlighted:before:rounded-sm style-nova:data-highlighted:before:rounded-md style-maia:data-highlighted:before:rounded-xl style-lyra:data-highlighted:before:rounded-none style-mira:data-highlighted:before:rounded-md style-luma:data-highlighted:before:rounded-2xl style-rhea:data-highlighted:before:rounded-2xl style-sera:data-highlighted:before:rounded-none",
-        "px-1.5 py-1 text-sm ([class*='size-'])]:size-4 ([class*='size-'])]:size-4 [&_svg:not([class*='size-'])]:size-4 ([class*='size-'])]:size-4 ([class*='size-'])]:size-3.5 ([class*='size-'])]:size-4 ([class*='size-'])]:size-3.5 relative flex cursor-default items-center outline-hidden transition-colors select-none data-disabled:pointer-events-none data-disabled:opacity-50 data-highlighted:relative data-highlighted:z-0 data-highlighted:before:absolute data-highlighted:before:inset-x-0 data-highlighted:before:inset-y-0 data-highlighted:before:z-[-1] [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([role=img]):not([class*=text-])]:opacity-60",
+        "([class*='size-'])]:size-4 ([class*='size-'])]:size-4 ([class*='size-'])]:size-4 ([class*='size-'])]:size-3.5 ([class*='size-'])]:size-4 ([class*='size-'])]:size-3.5 relative flex cursor-default items-center px-1.5 py-1 text-sm outline-hidden transition-colors select-none data-disabled:pointer-events-none data-disabled:opacity-50 data-highlighted:relative data-highlighted:z-0 data-highlighted:before:absolute data-highlighted:before:inset-x-0 data-highlighted:before:inset-y-0 data-highlighted:before:z-[-1] [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 [&_svg:not([role=img]):not([class*=text-])]:opacity-60",
         className
       )}
       {...props}
@@ -210,7 +210,7 @@ function AutocompleteContent({
           <AutocompletePrimitive.Popup
             data-slot="autocomplete-popup"
             className={cn(
-              "bg-popover text-popover-foreground style-vega:rounded-md style-nova:rounded-lg style-maia:rounded-2xl style-lyra:rounded-none style-mira:rounded-lg style-luma:rounded-3xl style-rhea:rounded-2xl style-sera:rounded-none shadow-md ring-foreground/10 flex max-h-[min(var(--available-height),24rem)] w-(--anchor-width) max-w-(--available-width) origin-(--transform-origin) scroll-pt-2 scroll-pb-2 flex-col overscroll-contain py-0.5 ring-1 transition-[scale,opacity] has-data-starting-style:scale-98 has-data-starting-style:opacity-0 has-data-[side=none]:scale-100 has-data-[side=none]:transition-none",
+              "bg-popover text-popover-foreground style-vega:rounded-md style-nova:rounded-lg style-maia:rounded-2xl style-lyra:rounded-none style-mira:rounded-lg style-luma:rounded-3xl style-rhea:rounded-2xl style-sera:rounded-none ring-foreground/10 flex max-h-[min(var(--available-height),24rem)] w-(--anchor-width) max-w-(--available-width) origin-(--transform-origin) scroll-pt-2 scroll-pb-2 flex-col overscroll-contain py-0.5 shadow-md ring-1 transition-[scale,opacity] has-data-starting-style:scale-98 has-data-starting-style:opacity-0 has-data-[side=none]:scale-100 has-data-[side=none]:transition-none",
               className
             )}
             {...props}
@@ -255,7 +255,7 @@ function AutocompleteEmpty({
     <AutocompletePrimitive.Empty
       data-slot="autocomplete-empty"
       className={cn(
-        "text-muted-foreground px-2 py-1.5 text-sm text-center empty:m-0 empty:p-0",
+        "text-muted-foreground px-2 py-1.5 text-center text-sm empty:m-0 empty:p-0",
         className
       )}
       {...props}
@@ -328,10 +328,7 @@ function AutocompleteSeparator({
   return (
     <AutocompletePrimitive.Separator
       data-slot="autocomplete-separator"
-      className={cn(
-        "bg-border my-1.5 h-px",
-        className
-      )}
+      className={cn("bg-border my-1.5 h-px", className)}
       {...props}
     />
   )

@@ -15,4 +15,3 @@ export function useIsMobile(mobileBreakpoint = 992) {
 
   return !!isMobile
 }
-

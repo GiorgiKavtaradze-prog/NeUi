@@ -6,13 +6,6 @@ function normalizeComponentSegment(value: string) {
   return value.trim().toLowerCase().replace(/\s+/g, "-")
 }
 
-/**
- * Bounded LRU caches.
- *
- * At 10k components across hundreds of categories, unbounded caches
- * would pin every visited preview's bundle in memory. The user only
- * sees a handful at a time, so we evict by recency.
- */
 const MAX_PREVIEW_LAZIES = 256
 const MAX_CATEGORY_LOADERS = 64
 

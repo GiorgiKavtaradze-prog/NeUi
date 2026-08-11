@@ -1,4 +1,3 @@
-// Keep these lists in sync with content/docs/(root)/changelog.mdx.
 export const DOCS_MENU_UPDATES = {
   "data-grid": "Virtualization and row pinning support added",
 } as const
@@ -16,4 +15,3 @@ export const COMPONENTS_MENU_UPDATES = {
 export const BLOCKS_MENU_UPDATES = {
   authentication: "10 new authentication blocks added",
 } as const
-

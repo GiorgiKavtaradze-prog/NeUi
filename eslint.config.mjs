@@ -32,7 +32,6 @@ export default defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
-    // Generated output (never hand-edited; see reui-project standards).
     ".source/**",
     "lib/generated/**",
     "public/**",

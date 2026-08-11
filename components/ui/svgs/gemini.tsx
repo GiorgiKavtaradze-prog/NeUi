@@ -1,4 +1,4 @@
-import type { SVGProps } from "react";
+import type { SVGProps } from "react"
 
 const Gemini = (props: SVGProps<SVGSVGElement>) => (
   <svg {...props} viewBox="0 0 296 298" fill="none">
@@ -166,7 +166,6 @@ const Gemini = (props: SVGProps<SVGSVGElement>) => (
       </filter>
     </defs>
   </svg>
-);
+)
 
-export { Gemini };
-
+export { Gemini }

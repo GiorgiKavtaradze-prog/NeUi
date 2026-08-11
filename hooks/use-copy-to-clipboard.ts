@@ -35,4 +35,3 @@ export function useCopyToClipboard({
 
   return { isCopied, copyToClipboard }
 }
-

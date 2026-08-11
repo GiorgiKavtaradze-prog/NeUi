@@ -1,38 +1,12 @@
-/**
- * build-component-packages.mts
- *
- * Generates `packages/registry/bases/<base>/components/<category>/`
- * workspace packages, each containing all the component previews for one
- * category pre-bundled via esbuild.
- *
- * Source of truth stays in `registry-neui/bases/<base>/components/`.
- * Packages are derived artifacts.
- *
- * Per-package shape:
- *   packages/registry/bases/<base>/components/<category>/
- *     package.json  (name="@neui/components-<base>-<category>")
- *     tsconfig.json
- *     src/index.ts  (export const componentPreviewLoaders = { name: () => import(...) })
- *     dist/index.js (esbuild output: react family externalized)
- *
- * With `--wire-app` the script also rewires
- * `lib/generated/component-preview-loaders/index.ts` so the runtime
- * resolves component categories to these workspace packages.
- *
- * Skip-broken-components: alias-resolution gating — if a component
- * references an `@/components/ui/<missing>` we exclude it from the
- * package rather than breaking the whole chunk.
- */
-
+import { promises as fs } from "fs"
+import fsSync from "node:fs"
+import path from "path"
+import { fileURLToPath } from "url"
 import {
   build as esbuildBuild,
   context as esbuildContext,
   type BuildContext,
 } from "esbuild"
-import { promises as fs } from "fs"
-import fsSync from "node:fs"
-import path from "path"
-import { fileURLToPath } from "url"
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -499,7 +473,9 @@ async function regenerateAppLoadersIndex(
   // regenerated below; per-base directories under it are no longer
   // needed (they've moved into the workspace packages).
   if (fsSync.existsSync(GENERATED_COMPONENT_PREVIEW_LOADERS_DIR)) {
-    for (const entry of await fs.readdir(GENERATED_COMPONENT_PREVIEW_LOADERS_DIR)) {
+    for (const entry of await fs.readdir(
+      GENERATED_COMPONENT_PREVIEW_LOADERS_DIR
+    )) {
       const p = path.join(GENERATED_COMPONENT_PREVIEW_LOADERS_DIR, entry)
       const s = await fs.stat(p)
       if (s.isDirectory()) await fs.rm(p, { recursive: true, force: true })
@@ -661,9 +637,11 @@ async function main() {
 
   const elapsed = ((Date.now() - t0) / 1000).toFixed(1)
   console.log(
-    `\n📊 Built ${packageNames.length} component packages, ${
-      (totalBytes / 1024 / 1024).toFixed(1)
-    } MB total, in ${elapsed}s`
+    `\n📊 Built ${packageNames.length} component packages, ${(
+      totalBytes /
+      1024 /
+      1024
+    ).toFixed(1)} MB total, in ${elapsed}s`
   )
 
   if (watchMode) {
@@ -674,9 +652,7 @@ async function main() {
     const shutdown = async () => {
       console.log("\nstopping watchers…")
       await Promise.all(
-        watchContexts.map(({ ctx }) =>
-          ctx.dispose().catch(() => undefined)
-        )
+        watchContexts.map(({ ctx }) => ctx.dispose().catch(() => undefined))
       )
       process.exit(0)
     }
@@ -690,4 +666,3 @@ main().catch((err) => {
   console.error(err)
   process.exit(1)
 })
-

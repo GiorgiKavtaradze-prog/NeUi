@@ -18,4 +18,3 @@ export const useMutationObserver = (
     }
   }, [ref, callback, options])
 }
-

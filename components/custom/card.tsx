@@ -37,13 +37,6 @@ export function Card({
     )
   }
 
-  // `break-inside-avoid` so a Card never gets split across a CSS-columns
-  // boundary (e.g. the masonry-style layout used by the home page Wall
-  // of Love grid). Outside a multi-column context the property is a
-  // no-op, so it's safe to apply by default — matches the URL'd branch
-  // above which already opts in via the explicit class. Without it,
-  // testimonial cards near a column break get visually clipped at the
-  // top / bottom with their twin half rendered into the next column.
   return (
     <Frame className={cn("break-inside-avoid", outerClassName)}>
       {innerContent}

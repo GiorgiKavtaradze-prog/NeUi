@@ -6,10 +6,6 @@ interface IntersectionObserverOptions extends IntersectionObserverInit {
   freezeOnceVisible?: boolean
 }
 
-/**
- * A shared intersection observer to manage multiple targets with a single observer instance.
- * Optimized for high-density lists like the components grid.
- */
 class SharedObserver {
   private observer: IntersectionObserver | null = null
   private callbacks = new Map<Element, (isIntersecting: boolean) => void>()
@@ -94,4 +90,3 @@ export function useIntersectionObserver(
 
   return isIntersecting
 }
-

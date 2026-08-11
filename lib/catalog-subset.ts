@@ -43,4 +43,3 @@ export const isPatternSmokeSubsetEnabled = isComponentSmokeSubsetEnabled
 export const filterPatternManifest = filterComponentManifest
 /** @deprecated Use getComponentSubsetCategoryOrder. */
 export const getPatternSubsetCategoryOrder = getComponentSubsetCategoryOrder
-

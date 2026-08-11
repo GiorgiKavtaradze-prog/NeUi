@@ -553,4 +553,3 @@ generate().catch((error) => {
   console.error("Failed to build components registry:", error)
   process.exit(1)
 })
-
