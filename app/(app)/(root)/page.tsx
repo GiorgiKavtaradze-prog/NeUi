@@ -36,7 +36,7 @@ export const metadata: Metadata = buildPageMetadata({
     "tailwind css components",
     "component library",
     "design system",
-    "reui",
+    "neui",
   ],
 })
 

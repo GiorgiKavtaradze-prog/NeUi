@@ -24,7 +24,7 @@ export function FigmaLink() {
             href={FIGMA_URL}
             target="_blank"
             rel="noreferrer"
-            aria-label="Open ReUI on Figma"
+            aria-label="Open NeUI on Figma"
           >
             <FigmaIcon className="size-[18px]" aria-hidden="true" />
             <span className="sr-only">Figma</span>

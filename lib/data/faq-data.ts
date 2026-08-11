@@ -15,7 +15,7 @@ export interface FAQCategory {
 const fmt = (n: number) => n.toLocaleString("en-US")
 
 /**
- * Static, component-focused FAQ set for the open-source ReUI site.
+ * Static, component-focused FAQ set for the open-source NeUI site.
  *
  * Answers are plain strings and may embed `[Label](href)` markdown links, which
  * `faq-block.tsx` renders into styled links. Nothing here is fetched at runtime.
@@ -28,19 +28,19 @@ const FAQ_CATEGORIES: FAQCategory[] = [
       {
         id: "what-is-neui",
         question: "What is NeUI?",
-        answer: `ReUI is a free, open-source component library for the [shadcn/ui](https://ui.shadcn.com) ecosystem. It gives you ${fmt(
+        answer: `NeUI is a free, open-source component library for the [shadcn/ui](https://ui.shadcn.com) ecosystem. It gives you ${fmt(
           COMPONENTS_TOTAL
         )}+ copy-paste component examples plus ${CUSTOM_PRIMITIVES_TOTAL} in-house primitives that are not part of base shadcn/ui - all built on React, Radix UI, Base UI, and Tailwind CSS.`,
       },
       {
         id: "who-is-it-for",
-        question: "Who is ReUI for?",
+        question: "Who is NeUI for?",
         answer:
           "Anyone building product UIs with React and Tailwind CSS - especially teams already using shadcn/ui who want more real-world components and advanced primitives like Data Grid, Kanban, and Filters without building them from scratch.",
       },
       {
         id: "is-it-free",
-        question: "Is ReUI really free?",
+        question: "Is NeUI really free?",
         answer:
           "Yes. Every component and primitive in this repository is free and open-source under the MIT license, for both commercial and personal projects. No account, no sign-up, no license key.",
       },
@@ -55,7 +55,7 @@ const FAQ_CATEGORIES: FAQCategory[] = [
         question: "What's included?",
         answer: `${fmt(
           COMPONENTS_TOTAL
-        )}+ shadcn component examples and ${CUSTOM_PRIMITIVES_TOTAL} ReUI custom primitives - including Data Grid, Kanban, Filters, Stepper, Tree, Timeline, and more. Each primitive ships with full documentation and usage examples. The catalog grows with every release.`,
+        )}+ shadcn component examples and ${CUSTOM_PRIMITIVES_TOTAL} NeUI custom primitives - including Data Grid, Kanban, Filters, Stepper, Tree, Timeline, and more. Each primitive ships with full documentation and usage examples. The catalog grows with every release.`,
       },
       {
         id: "radix-vs-base",
@@ -101,9 +101,9 @@ const FAQ_CATEGORIES: FAQCategory[] = [
     faqs: [
       {
         id: "license-terms",
-        question: "What license is ReUI released under?",
+        question: "What license is NeUI released under?",
         answer:
-          "The MIT license. You can use ReUI components in personal, commercial, and open-source projects for free, forever.",
+          "The MIT license. You can use NeUI components in personal, commercial, and open-source projects for free, forever.",
       },
       {
         id: "contributing",

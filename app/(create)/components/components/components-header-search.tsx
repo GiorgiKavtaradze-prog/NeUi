@@ -21,7 +21,7 @@ function emitComponentsSearchChange(search: string | null) {
   }
 
   window.dispatchEvent(
-    new CustomEvent("reui-components-search", {
+    new CustomEvent("neui-components-search", {
       detail: { search: search ?? "" },
     })
   )

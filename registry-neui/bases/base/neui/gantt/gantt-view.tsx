@@ -55,7 +55,7 @@ import type {
 import { mergeProps } from "@base-ui/react/merge-props"
 // Base UI's ScrollArea re-measures its thumb + overflow on mount, viewport
 // resize and scroll, but NOT on a content-size change unless the content sits
-// in a ScrollArea.Content (which carries the content ResizeObserver). ReUI's
+// in a ScrollArea.Content (which carries the content ResizeObserver). NeUI's
 // ScrollArea puts children straight in the Viewport, so the tree/timeline
 // panes wrap their scroll content in this Content to keep the scrollbar in
 // sync when rows expand/collapse or tree columns show/hide. (Radix observes

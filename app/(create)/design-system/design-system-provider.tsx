@@ -205,7 +205,7 @@ export function DesignSystemProvider({
   }, [style, radius, setParams, setConfig])
 
   React.useEffect(() => {
-    // Lock document scroll ONLY for reui's OWN same-origin preview embeds, where
+    // Lock document scroll ONLY for neui's OWN same-origin preview embeds, where
     // the parent frame owns the scroll. A cross-origin embedder (e.g.
     // shoogle.dev) must keep normal document scroll - gating this on
     // `isInIframe()` (any embed) left the whole listing page unscrollable inside

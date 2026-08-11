@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "ReUI",
+  name: "NeUI",
   url: "https://neui.io",
   description:
     "Free, open-source shadcn/ui components and in-house primitives for building production-ready React apps faster.",

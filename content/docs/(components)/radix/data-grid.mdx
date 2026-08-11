@@ -30,9 +30,9 @@ npx shadcn@latest add @neui/data-grid
 
 TanStack Table v8 returns a stable table instance whose state mutates internally (the reference itself never changes). React Compiler memoizes reads against that stable reference, so state updates can be skipped. In practice that shows up as stale row-selection checkboxes, frozen sort arrows, and unresponsive pin or pagination controls. The fix is the `"use no memo"` directive, which opts a file out of the compiler. It is an inert no-op when React Compiler is not enabled, and is the recommended interim until TanStack Table v9's compiler-native API lands.
 
-**Already handled for you.** Every ReUI data-grid file you install (the primitive and the examples) already ships with `"use no memo"`, so installed ReUI code is safe out of the box.
+**Already handled for you.** Every NeUI data-grid file you install (the primitive and the examples) already ships with `"use no memo"`, so installed NeUI code is safe out of the box.
 
-**What you must do.** If you enable React Compiler, add `"use no memo"` to your own component that calls `useReactTable`, the one file ReUI cannot reach:
+**What you must do.** If you enable React Compiler, add `"use no memo"` to your own component that calls `useReactTable`, the one file NeUI cannot reach:
 
 </Callout>
 
@@ -60,7 +60,7 @@ Prefer excluding a whole directory over a per-file directive? Configure it in yo
 ```ts
 babel({
   presets: [reactCompilerPreset()],
-  exclude: ["**/components/reui/data-grid/**", "**/your-tables/**"],
+  exclude: ["**/components/neui/data-grid/**", "**/your-tables/**"],
 })
 ```
 
@@ -76,7 +76,7 @@ import {
   DataGridTable,
   DataGridTableFootRow,
   DataGridTableFootRowCell,
-} from "@/components/reui/data-grid"
+} from "@/components/neui/data-grid"
 ```
 
 ```tsx

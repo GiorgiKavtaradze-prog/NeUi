@@ -58,14 +58,14 @@ const featuredCategories = [
 ] as const
 
 export const metadata: Metadata = buildPageMetadata({
-  // Clean title — the root `%s - ReUI` template adds the brand. The
-  // manual `+ " - ReUI"` here doubled it to "… - ReUI - ReUI".
+  // Clean title — the root `%s - NeUI` template adds the brand. The
+  // manual `+ " - NeUI"` here doubled it to "… - NeUI - NeUI".
   title,
   description,
   path: "/components",
   keywords: [
     "shadcn components",
-    "reui components",
+    "neui components",
     "shadcn ui component",
     "open source shadcn component",
     "React components",
@@ -95,7 +95,7 @@ export default async function ComponentsPage() {
     <>
       <JsonLd
         data={buildBreadcrumbJsonLd([
-          { name: "ReUI", path: "/" },
+          { name: "NeUI", path: "/" },
           { name: "Components", path: "/components" },
         ])}
       />
@@ -106,7 +106,7 @@ export default async function ComponentsPage() {
         description={
           <>
             Browse {totalComponentCount}+ free open-source shadcn/ui components
-            for React and Tailwind CSS. ReUI helps you move from primitives to
+            for React and Tailwind CSS. NeUI helps you move from primitives to
             polished product UI with real examples for alerts, data grids,
             filters, file uploads, forms, navigation, and more.
           </>

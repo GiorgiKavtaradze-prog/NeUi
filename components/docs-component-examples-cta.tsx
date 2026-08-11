@@ -44,7 +44,7 @@ export function DocsComponentExamplesCta({
             Browse all {componentCount} Shadcn {label} components
           </Link>{" "}
           for copy-ready layouts, dashboards, and forms built with Tailwind CSS
-          in the ReUI library.
+          in the NeUI library.
         </p>
       </div>
     </section>

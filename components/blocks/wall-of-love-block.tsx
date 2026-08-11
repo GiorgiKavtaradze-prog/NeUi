@@ -20,7 +20,7 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    text: "Yes ReUI is part of the trusted registries. One of the best out there",
+    text: "Yes NeUI is part of the trusted registries. One of the best out there",
     author: {
       name: "shadcn",
       handle: "@shadcn",
@@ -220,7 +220,7 @@ const testimonials: Testimonial[] = [
     },
   },
   {
-    text: "As usual @reui_io always delivers; Quality UI, Code etc. I love the Data Grid + @tan_stack Table integration 🫶",
+    text: "As usual @neui_io always delivers; Quality UI, Code etc. I love the Data Grid + @tan_stack Table integration 🫶",
     author: {
       name: "David Benson",
       handle: "@DavidBensonX",
@@ -300,7 +300,7 @@ const testimonials: Testimonial[] = [
     },
   },
   {
-    text: "Cannot wait for this to drop. Using ReUI on a current project and am loving it.",
+    text: "Cannot wait for this to drop. Using NeUI on a current project and am loving it.",
     author: {
       name: "Jalen Parham",
       handle: "@JalenParham97",
@@ -330,7 +330,7 @@ const testimonials: Testimonial[] = [
     },
   },
   {
-    text: "This sounds amazing! Excited to see all the new features and the UI patterns you’ve put together. Can’t wait to try it out! @reui_io  🔥",
+    text: "This sounds amazing! Excited to see all the new features and the UI patterns you’ve put together. Can’t wait to try it out! @neui_io  🔥",
     author: {
       name: "ADil Sarfraz",
       handle: "@adilsarfraz02",
@@ -420,7 +420,7 @@ const testimonials: Testimonial[] = [
     },
   },
   {
-    text: "Dude my saas project frontend depends on reui. The components are production-ready right out of the box, it's been a huge time-saver! 😉",
+    text: "Dude my saas project frontend depends on neui. The components are production-ready right out of the box, it's been a huge time-saver! 😉",
     author: {
       name: "Tayeb 🇩🇿 🇵🇸",
       handle: "@tay_khed",

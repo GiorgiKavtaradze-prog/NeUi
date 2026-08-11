@@ -141,7 +141,7 @@ export async function renderComponentDocPage({
     <>
       <JsonLd
         data={buildBreadcrumbJsonLd([
-          { name: "ReUI", path: "/" },
+          { name: "NeUI", path: "/" },
           { name: "Docs", path: "/docs" },
           { name: docHeadingTitle, path: breadcrumbPath },
         ])}

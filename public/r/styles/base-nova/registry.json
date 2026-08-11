@@ -11337,7 +11337,7 @@
       "name": "c-event-calendar-3",
       "type": "registry:block",
       "title": "Event calendar with create and edit dialog",
-      "description": "Month calendar with event CRUD in one dialog: open from an empty day, an event, or Add event, commit via apiRef. Title, color, start, duration, all-day fields. ReUI EventCalendar, Nav, Toolbar; shadcn Dialog, Field, Select, Switch. Scheduling apps.",
+      "description": "Month calendar with event CRUD in one dialog: open from an empty day, an event, or Add event, commit via apiRef. Title, color, start, duration, all-day fields. NeUI EventCalendar, Nav, Toolbar; shadcn Dialog, Field, Select, Switch. Scheduling apps.",
       "dependencies": [
         "date-fns"
       ],
@@ -12654,7 +12654,7 @@
       "name": "c-gantt-3",
       "type": "registry:block",
       "title": "Gantt chart with quarter roadmap and rollups",
-      "description": "Quarter-scale roadmap where workstream groups form swimlanes and parent rows roll children into one summary bar. Toolbar button calls addEvent via apiRef to schedule backlog items. ReUI Gantt, GanttNav, GanttToolbar, GanttView; shadcn Card, Button.",
+      "description": "Quarter-scale roadmap where workstream groups form swimlanes and parent rows roll children into one summary bar. Toolbar button calls addEvent via apiRef to schedule backlog items. NeUI Gantt, GanttNav, GanttToolbar, GanttView; shadcn Card, Button.",
       "dependencies": [
         "date-fns"
       ],
