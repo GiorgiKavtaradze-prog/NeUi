@@ -13,7 +13,6 @@ export default function CreateError({
   reset: () => void
 }) {
   React.useEffect(() => {
-    // Surface for observability (Vercel captures console.error).
     console.error("[create-error-boundary]", error)
   }, [error])
 
@@ -43,4 +42,3 @@ export default function CreateError({
     </div>
   )
 }
-

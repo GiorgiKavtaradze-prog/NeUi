@@ -21,15 +21,12 @@ function collectDocUrls(): string[] {
 
 async function buildSitemap(): Promise<MetadataRoute.Sitemap> {
   "use cache"
+  
   cacheLife("max")
 
   const baseUrl = siteConfig.url
 
-  const staticPaths = [
-    baseUrl,
-    `${baseUrl}/docs`,
-    `${baseUrl}/components`,
-  ]
+  const staticPaths = [baseUrl, `${baseUrl}/docs`, `${baseUrl}/components`]
 
   const docPaths = collectDocUrls().map((path) => `${baseUrl}${path}`)
 
@@ -45,4 +42,3 @@ async function buildSitemap(): Promise<MetadataRoute.Sitemap> {
 export default function sitemap(): Promise<MetadataRoute.Sitemap> {
   return buildSitemap()
 }
-

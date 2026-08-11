@@ -15,15 +15,13 @@ function normalizeWorkbenchMode(
   return view === "code" ? "code" : "preview"
 }
 
-/**
- * Cache per-(base, name) component resolution with 'use cache' +
- * cacheLife("max") so each rendered preview is reused across requests.
- */
 async function loadComponentWorkbenchData(baseName: string, name: string) {
   "use cache"
   cacheLife("max")
 
-  const base = filterAvailableBases(BASES).find((candidate: any) => candidate.name === baseName)
+  const base = filterAvailableBases(BASES).find(
+    (candidate: any) => candidate.name === baseName
+  )
   if (!base) {
     return { ok: false as const }
   }
@@ -61,4 +59,3 @@ export default async function ComponentWorkbenchPage({
     />
   )
 }
-

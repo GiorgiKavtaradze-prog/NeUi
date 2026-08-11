@@ -26,16 +26,6 @@ import { getDocsPageTree } from "@/components/docs-page-tree"
 import { DocsTableOfContents } from "@/components/docs-toc"
 import { JsonLd } from "@/components/json-ld"
 
-/**
- * Prebuild EVERY plain docs page (fumadocs source enumeration). Without
- * this the route had no static params, so pages like /docs/get-started
- * were never prerendered - each request rendered on demand by
- * RESUMING the route's fallback-shell postponed state, and on production
- * deploy skew that resume threw "Couldn't find all resumable slots"
- * on every docs hit. With the pages prebuilt (and the header auth island
- * now client-rendered), each docs page is a fully static prerender with
- * zero postponed state - nothing left to mis-resume on any deploy.
- */
 export function generateStaticParams() {
   return source.generateParams()
 }
@@ -95,8 +85,6 @@ export default async function Page(props: {
           { name: doc.title, path: page.url },
         ])}
       />
-      {/* Same title/description generateMetadata uses, so the canonical
-          and the structured data always agree. */}
       <JsonLd
         data={buildArticleJsonLd({
           title: doc.title,
@@ -226,4 +214,3 @@ export default async function Page(props: {
     </>
   )
 }
-

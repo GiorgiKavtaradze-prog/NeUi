@@ -1,10 +1,10 @@
 import { notFound } from "next/navigation"
 
+import { CANONICAL_COMPONENT_DOC_SLUGS } from "@/lib/component-doc-paths"
 import {
   generateComponentDocMetadata,
   renderComponentDocPage,
 } from "@/app/docs/_lib/component-doc-page"
-import { CANONICAL_COMPONENT_DOC_SLUGS } from "@/lib/component-doc-paths"
 
 export function generateStaticParams() {
   return CANONICAL_COMPONENT_DOC_SLUGS.flatMap((component) => [
@@ -53,4 +53,3 @@ export default async function Page(props: {
 
   return renderComponentDocPage(resolved)
 }
-

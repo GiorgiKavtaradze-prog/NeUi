@@ -296,4 +296,3 @@ export async function renderComponentDocPage({
     </>
   )
 }
-

@@ -66,8 +66,6 @@ export async function generateMetadata({
   const seo = getComponentCategorySeo(normalized)
 
   return buildPageMetadata({
-    // Keep the "UI Components" descriptor inline (it's a descriptor, not
-    // the brand); the root `%s - NeUI` template still appends the brand.
     title: `${seo.title} - ${siteConfig.metadata.titleSuffixes.componentCategory}`,
     description: seo.description,
     path: `/components/${normalized}`,
@@ -83,11 +81,6 @@ export async function generateMetadata({
   })
 }
 
-/**
- * Cache per-category resolution. `getCategoryComponentItems` does the
- * heaviest registry walk on this route; sharing the result across visitors
- * of the same category is the biggest single win.
- */
 async function loadCategoryComponentsPageData(normalized: string) {
   "use cache"
   cacheLife("max")
@@ -141,8 +134,6 @@ export default async function CategoryComponentsPage({
       {faqJsonLd ? <JsonLd data={faqJsonLd} /> : null}
       <section>
         <div className="w-full px-6 pt-8 pb-6 sm:px-8 xl:px-10">
-          {/* Browsing breadcrumb, mirroring the blocks listing
-              (Blocks > Group > Category): Components > {Category}. */}
           <Breadcrumb className="mb-1">
             <BreadcrumbList>
               <BreadcrumbItem>
@@ -169,15 +160,6 @@ export default async function CategoryComponentsPage({
           {seo.intro ? <ComponentCategoryHeroIntro intro={seo.intro} /> : null}
         </div>
       </section>
-      {/* `CategoryPageContent` is a Client Component that doesn't use any
-          Suspense-triggering hook (it reads `window.location.search` in a
-          `useEffect`). The previous outer `<Suspense>` boundary made the
-          shell prerender with a spinner fallback under `cacheComponents:
-          true` and stream the actual grid in afterwards — causing a
-          visible blank-flash on first paint. With the boundary removed,
-          the cached page now ships the fully rendered grid in its
-          initial HTML. The inner `<Suspense>` inside `ComponentsGrid`
-          still handles the URL-search-reading path used elsewhere. */}
       <CategoryPageContent components={components} />
       <ComponentCategorySeoContent seo={seo} />
       <ComponentCategoryPager currentCategory={normalized} />

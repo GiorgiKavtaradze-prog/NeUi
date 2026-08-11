@@ -3,20 +3,6 @@
 import * as React from "react"
 import { atom, useAtom } from "jotai"
 
-/**
- * Port of the upstream shadcn `use-open-preset` hook.
- *
- * Owns the shared open/close state for the Open-Preset dialog (Jotai
- * atom) and the `O` keyboard shortcut that opens it from anywhere.
- *
- * - `useOpenPreset()` → `{ open, setOpen }` for the dialog itself.
- * - `useOpenPresetTrigger()` → `{ openPreset }` for buttons that only
- *    need to open the dialog (e.g. the customizer footer).
- *
- * Keyboard: a plain `O` keypress opens the dialog (matches upstream).
- * Ignored when focus is inside editable elements.
- */
-
 const openPresetOpenAtom = atom(false)
 
 export const OPEN_PRESET_FORWARD_TYPE = "open-preset-forward"
@@ -73,4 +59,3 @@ export function useOpenPresetTrigger() {
 
   return { openPreset }
 }
-
