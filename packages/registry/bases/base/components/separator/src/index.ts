@@ -2,12 +2,18 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-separator-1": () => import("@/registry-neui/bases/base/components/separator/c-separator-1.tsx"),
-  "c-separator-2": () => import("@/registry-neui/bases/base/components/separator/c-separator-2.tsx"),
-  "c-separator-3": () => import("@/registry-neui/bases/base/components/separator/c-separator-3.tsx"),
-  "c-separator-4": () => import("@/registry-neui/bases/base/components/separator/c-separator-4.tsx"),
-  "c-separator-5": () => import("@/registry-neui/bases/base/components/separator/c-separator-5.tsx"),
-  "c-separator-6": () => import("@/registry-neui/bases/base/components/separator/c-separator-6.tsx"),
+  "c-separator-1": () =>
+    import("@/registry-neui/bases/base/components/separator/c-separator-1.tsx"),
+  "c-separator-2": () =>
+    import("@/registry-neui/bases/base/components/separator/c-separator-2.tsx"),
+  "c-separator-3": () =>
+    import("@/registry-neui/bases/base/components/separator/c-separator-3.tsx"),
+  "c-separator-4": () =>
+    import("@/registry-neui/bases/base/components/separator/c-separator-4.tsx"),
+  "c-separator-5": () =>
+    import("@/registry-neui/bases/base/components/separator/c-separator-5.tsx"),
+  "c-separator-6": () =>
+    import("@/registry-neui/bases/base/components/separator/c-separator-6.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

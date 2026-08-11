@@ -2,18 +2,30 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-spinner-1": () => import("@/registry-neui/bases/base/components/spinner/c-spinner-1.tsx"),
-  "c-spinner-2": () => import("@/registry-neui/bases/base/components/spinner/c-spinner-2.tsx"),
-  "c-spinner-3": () => import("@/registry-neui/bases/base/components/spinner/c-spinner-3.tsx"),
-  "c-spinner-4": () => import("@/registry-neui/bases/base/components/spinner/c-spinner-4.tsx"),
-  "c-spinner-5": () => import("@/registry-neui/bases/base/components/spinner/c-spinner-5.tsx"),
-  "c-spinner-6": () => import("@/registry-neui/bases/base/components/spinner/c-spinner-6.tsx"),
-  "c-spinner-7": () => import("@/registry-neui/bases/base/components/spinner/c-spinner-7.tsx"),
-  "c-spinner-8": () => import("@/registry-neui/bases/base/components/spinner/c-spinner-8.tsx"),
-  "c-spinner-9": () => import("@/registry-neui/bases/base/components/spinner/c-spinner-9.tsx"),
-  "c-spinner-10": () => import("@/registry-neui/bases/base/components/spinner/c-spinner-10.tsx"),
-  "c-spinner-11": () => import("@/registry-neui/bases/base/components/spinner/c-spinner-11.tsx"),
-  "c-spinner-12": () => import("@/registry-neui/bases/base/components/spinner/c-spinner-12.tsx"),
+  "c-spinner-1": () =>
+    import("@/registry-neui/bases/base/components/spinner/c-spinner-1.tsx"),
+  "c-spinner-2": () =>
+    import("@/registry-neui/bases/base/components/spinner/c-spinner-2.tsx"),
+  "c-spinner-3": () =>
+    import("@/registry-neui/bases/base/components/spinner/c-spinner-3.tsx"),
+  "c-spinner-4": () =>
+    import("@/registry-neui/bases/base/components/spinner/c-spinner-4.tsx"),
+  "c-spinner-5": () =>
+    import("@/registry-neui/bases/base/components/spinner/c-spinner-5.tsx"),
+  "c-spinner-6": () =>
+    import("@/registry-neui/bases/base/components/spinner/c-spinner-6.tsx"),
+  "c-spinner-7": () =>
+    import("@/registry-neui/bases/base/components/spinner/c-spinner-7.tsx"),
+  "c-spinner-8": () =>
+    import("@/registry-neui/bases/base/components/spinner/c-spinner-8.tsx"),
+  "c-spinner-9": () =>
+    import("@/registry-neui/bases/base/components/spinner/c-spinner-9.tsx"),
+  "c-spinner-10": () =>
+    import("@/registry-neui/bases/base/components/spinner/c-spinner-10.tsx"),
+  "c-spinner-11": () =>
+    import("@/registry-neui/bases/base/components/spinner/c-spinner-11.tsx"),
+  "c-spinner-12": () =>
+    import("@/registry-neui/bases/base/components/spinner/c-spinner-12.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

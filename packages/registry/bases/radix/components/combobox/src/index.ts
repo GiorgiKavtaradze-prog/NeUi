@@ -2,34 +2,62 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-combobox-1": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-1.tsx"),
-  "c-combobox-2": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-2.tsx"),
-  "c-combobox-3": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-3.tsx"),
-  "c-combobox-4": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-4.tsx"),
-  "c-combobox-5": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-5.tsx"),
-  "c-combobox-6": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-6.tsx"),
-  "c-combobox-7": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-7.tsx"),
-  "c-combobox-8": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-8.tsx"),
-  "c-combobox-9": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-9.tsx"),
-  "c-combobox-10": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-10.tsx"),
-  "c-combobox-11": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-11.tsx"),
-  "c-combobox-12": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-12.tsx"),
-  "c-combobox-13": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-13.tsx"),
-  "c-combobox-14": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-14.tsx"),
-  "c-combobox-15": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-15.tsx"),
-  "c-combobox-16": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-16.tsx"),
-  "c-combobox-17": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-17.tsx"),
-  "c-combobox-18": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-18.tsx"),
-  "c-combobox-19": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-19.tsx"),
-  "c-combobox-20": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-20.tsx"),
-  "c-combobox-21": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-21.tsx"),
-  "c-combobox-22": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-22.tsx"),
-  "c-combobox-23": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-23.tsx"),
-  "c-combobox-24": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-24.tsx"),
-  "c-combobox-25": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-25.tsx"),
-  "c-combobox-26": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-26.tsx"),
-  "c-combobox-27": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-27.tsx"),
-  "c-combobox-28": () => import("@/registry-neui/bases/radix/components/combobox/c-combobox-28.tsx"),
+  "c-combobox-1": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-1.tsx"),
+  "c-combobox-2": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-2.tsx"),
+  "c-combobox-3": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-3.tsx"),
+  "c-combobox-4": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-4.tsx"),
+  "c-combobox-5": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-5.tsx"),
+  "c-combobox-6": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-6.tsx"),
+  "c-combobox-7": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-7.tsx"),
+  "c-combobox-8": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-8.tsx"),
+  "c-combobox-9": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-9.tsx"),
+  "c-combobox-10": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-10.tsx"),
+  "c-combobox-11": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-11.tsx"),
+  "c-combobox-12": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-12.tsx"),
+  "c-combobox-13": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-13.tsx"),
+  "c-combobox-14": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-14.tsx"),
+  "c-combobox-15": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-15.tsx"),
+  "c-combobox-16": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-16.tsx"),
+  "c-combobox-17": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-17.tsx"),
+  "c-combobox-18": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-18.tsx"),
+  "c-combobox-19": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-19.tsx"),
+  "c-combobox-20": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-20.tsx"),
+  "c-combobox-21": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-21.tsx"),
+  "c-combobox-22": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-22.tsx"),
+  "c-combobox-23": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-23.tsx"),
+  "c-combobox-24": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-24.tsx"),
+  "c-combobox-25": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-25.tsx"),
+  "c-combobox-26": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-26.tsx"),
+  "c-combobox-27": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-27.tsx"),
+  "c-combobox-28": () =>
+    import("@/registry-neui/bases/radix/components/combobox/c-combobox-28.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

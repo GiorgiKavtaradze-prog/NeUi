@@ -2,18 +2,30 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-timeline-1": () => import("@/registry-neui/bases/base/components/timeline/c-timeline-1.tsx"),
-  "c-timeline-2": () => import("@/registry-neui/bases/base/components/timeline/c-timeline-2.tsx"),
-  "c-timeline-3": () => import("@/registry-neui/bases/base/components/timeline/c-timeline-3.tsx"),
-  "c-timeline-4": () => import("@/registry-neui/bases/base/components/timeline/c-timeline-4.tsx"),
-  "c-timeline-5": () => import("@/registry-neui/bases/base/components/timeline/c-timeline-5.tsx"),
-  "c-timeline-6": () => import("@/registry-neui/bases/base/components/timeline/c-timeline-6.tsx"),
-  "c-timeline-7": () => import("@/registry-neui/bases/base/components/timeline/c-timeline-7.tsx"),
-  "c-timeline-8": () => import("@/registry-neui/bases/base/components/timeline/c-timeline-8.tsx"),
-  "c-timeline-9": () => import("@/registry-neui/bases/base/components/timeline/c-timeline-9.tsx"),
-  "c-timeline-10": () => import("@/registry-neui/bases/base/components/timeline/c-timeline-10.tsx"),
-  "c-timeline-11": () => import("@/registry-neui/bases/base/components/timeline/c-timeline-11.tsx"),
-  "c-timeline-12": () => import("@/registry-neui/bases/base/components/timeline/c-timeline-12.tsx"),
+  "c-timeline-1": () =>
+    import("@/registry-neui/bases/base/components/timeline/c-timeline-1.tsx"),
+  "c-timeline-2": () =>
+    import("@/registry-neui/bases/base/components/timeline/c-timeline-2.tsx"),
+  "c-timeline-3": () =>
+    import("@/registry-neui/bases/base/components/timeline/c-timeline-3.tsx"),
+  "c-timeline-4": () =>
+    import("@/registry-neui/bases/base/components/timeline/c-timeline-4.tsx"),
+  "c-timeline-5": () =>
+    import("@/registry-neui/bases/base/components/timeline/c-timeline-5.tsx"),
+  "c-timeline-6": () =>
+    import("@/registry-neui/bases/base/components/timeline/c-timeline-6.tsx"),
+  "c-timeline-7": () =>
+    import("@/registry-neui/bases/base/components/timeline/c-timeline-7.tsx"),
+  "c-timeline-8": () =>
+    import("@/registry-neui/bases/base/components/timeline/c-timeline-8.tsx"),
+  "c-timeline-9": () =>
+    import("@/registry-neui/bases/base/components/timeline/c-timeline-9.tsx"),
+  "c-timeline-10": () =>
+    import("@/registry-neui/bases/base/components/timeline/c-timeline-10.tsx"),
+  "c-timeline-11": () =>
+    import("@/registry-neui/bases/base/components/timeline/c-timeline-11.tsx"),
+  "c-timeline-12": () =>
+    import("@/registry-neui/bases/base/components/timeline/c-timeline-12.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

@@ -2,19 +2,32 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-label-1": () => import("@/registry-neui/bases/radix/components/label/c-label-1.tsx"),
-  "c-label-2": () => import("@/registry-neui/bases/radix/components/label/c-label-2.tsx"),
-  "c-label-3": () => import("@/registry-neui/bases/radix/components/label/c-label-3.tsx"),
-  "c-label-4": () => import("@/registry-neui/bases/radix/components/label/c-label-4.tsx"),
-  "c-label-5": () => import("@/registry-neui/bases/radix/components/label/c-label-5.tsx"),
-  "c-label-6": () => import("@/registry-neui/bases/radix/components/label/c-label-6.tsx"),
-  "c-label-7": () => import("@/registry-neui/bases/radix/components/label/c-label-7.tsx"),
-  "c-label-8": () => import("@/registry-neui/bases/radix/components/label/c-label-8.tsx"),
-  "c-label-9": () => import("@/registry-neui/bases/radix/components/label/c-label-9.tsx"),
-  "c-label-10": () => import("@/registry-neui/bases/radix/components/label/c-label-10.tsx"),
-  "c-label-11": () => import("@/registry-neui/bases/radix/components/label/c-label-11.tsx"),
-  "c-label-12": () => import("@/registry-neui/bases/radix/components/label/c-label-12.tsx"),
-  "c-label-13": () => import("@/registry-neui/bases/radix/components/label/c-label-13.tsx"),
+  "c-label-1": () =>
+    import("@/registry-neui/bases/radix/components/label/c-label-1.tsx"),
+  "c-label-2": () =>
+    import("@/registry-neui/bases/radix/components/label/c-label-2.tsx"),
+  "c-label-3": () =>
+    import("@/registry-neui/bases/radix/components/label/c-label-3.tsx"),
+  "c-label-4": () =>
+    import("@/registry-neui/bases/radix/components/label/c-label-4.tsx"),
+  "c-label-5": () =>
+    import("@/registry-neui/bases/radix/components/label/c-label-5.tsx"),
+  "c-label-6": () =>
+    import("@/registry-neui/bases/radix/components/label/c-label-6.tsx"),
+  "c-label-7": () =>
+    import("@/registry-neui/bases/radix/components/label/c-label-7.tsx"),
+  "c-label-8": () =>
+    import("@/registry-neui/bases/radix/components/label/c-label-8.tsx"),
+  "c-label-9": () =>
+    import("@/registry-neui/bases/radix/components/label/c-label-9.tsx"),
+  "c-label-10": () =>
+    import("@/registry-neui/bases/radix/components/label/c-label-10.tsx"),
+  "c-label-11": () =>
+    import("@/registry-neui/bases/radix/components/label/c-label-11.tsx"),
+  "c-label-12": () =>
+    import("@/registry-neui/bases/radix/components/label/c-label-12.tsx"),
+  "c-label-13": () =>
+    import("@/registry-neui/bases/radix/components/label/c-label-13.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

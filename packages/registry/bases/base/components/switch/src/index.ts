@@ -2,20 +2,34 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-switch-1": () => import("@/registry-neui/bases/base/components/switch/c-switch-1.tsx"),
-  "c-switch-2": () => import("@/registry-neui/bases/base/components/switch/c-switch-2.tsx"),
-  "c-switch-3": () => import("@/registry-neui/bases/base/components/switch/c-switch-3.tsx"),
-  "c-switch-4": () => import("@/registry-neui/bases/base/components/switch/c-switch-4.tsx"),
-  "c-switch-5": () => import("@/registry-neui/bases/base/components/switch/c-switch-5.tsx"),
-  "c-switch-6": () => import("@/registry-neui/bases/base/components/switch/c-switch-6.tsx"),
-  "c-switch-7": () => import("@/registry-neui/bases/base/components/switch/c-switch-7.tsx"),
-  "c-switch-8": () => import("@/registry-neui/bases/base/components/switch/c-switch-8.tsx"),
-  "c-switch-9": () => import("@/registry-neui/bases/base/components/switch/c-switch-9.tsx"),
-  "c-switch-10": () => import("@/registry-neui/bases/base/components/switch/c-switch-10.tsx"),
-  "c-switch-11": () => import("@/registry-neui/bases/base/components/switch/c-switch-11.tsx"),
-  "c-switch-12": () => import("@/registry-neui/bases/base/components/switch/c-switch-12.tsx"),
-  "c-switch-13": () => import("@/registry-neui/bases/base/components/switch/c-switch-13.tsx"),
-  "c-switch-14": () => import("@/registry-neui/bases/base/components/switch/c-switch-14.tsx"),
+  "c-switch-1": () =>
+    import("@/registry-neui/bases/base/components/switch/c-switch-1.tsx"),
+  "c-switch-2": () =>
+    import("@/registry-neui/bases/base/components/switch/c-switch-2.tsx"),
+  "c-switch-3": () =>
+    import("@/registry-neui/bases/base/components/switch/c-switch-3.tsx"),
+  "c-switch-4": () =>
+    import("@/registry-neui/bases/base/components/switch/c-switch-4.tsx"),
+  "c-switch-5": () =>
+    import("@/registry-neui/bases/base/components/switch/c-switch-5.tsx"),
+  "c-switch-6": () =>
+    import("@/registry-neui/bases/base/components/switch/c-switch-6.tsx"),
+  "c-switch-7": () =>
+    import("@/registry-neui/bases/base/components/switch/c-switch-7.tsx"),
+  "c-switch-8": () =>
+    import("@/registry-neui/bases/base/components/switch/c-switch-8.tsx"),
+  "c-switch-9": () =>
+    import("@/registry-neui/bases/base/components/switch/c-switch-9.tsx"),
+  "c-switch-10": () =>
+    import("@/registry-neui/bases/base/components/switch/c-switch-10.tsx"),
+  "c-switch-11": () =>
+    import("@/registry-neui/bases/base/components/switch/c-switch-11.tsx"),
+  "c-switch-12": () =>
+    import("@/registry-neui/bases/base/components/switch/c-switch-12.tsx"),
+  "c-switch-13": () =>
+    import("@/registry-neui/bases/base/components/switch/c-switch-13.tsx"),
+  "c-switch-14": () =>
+    import("@/registry-neui/bases/base/components/switch/c-switch-14.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders
