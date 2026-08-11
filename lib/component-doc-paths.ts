@@ -49,4 +49,3 @@ export function canonicalizeComponentDocUrl(url: string) {
 
   return url
 }
-

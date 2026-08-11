@@ -2,17 +2,6 @@
 
 import * as React from "react"
 
-/**
- * The "Free" word in the components heading with a single underline stroke
- * that draws itself in when the word scrolls into view. The stroke uses the
- * premium nav-tile color tone (pink -> violet -> blue), and a larger bottom
- * offset leaves a clear gap between the word and the line.
- *
- * The line starts fully drawn so SSR / no-JS / reduced-motion users always see
- * it; the effect resets it and replays the single draw once, the first time the
- * word enters the viewport. The reset happens off-screen (the section sits
- * below the fold), so there is no visible flash.
- */
 export function FreeUnderline() {
   const hostRef = React.useRef<HTMLSpanElement>(null)
   const [drawn, setDrawn] = React.useState(true)
@@ -28,7 +17,6 @@ export function FreeUnderline() {
       return
     }
 
-    // Reset to the undrawn state, then draw once the word scrolls into view.
     setDrawn(false)
     const observer = new IntersectionObserver(
       (entries) => {
@@ -55,7 +43,7 @@ export function FreeUnderline() {
         viewBox="0 0 120 18"
         fill="none"
         preserveAspectRatio="none"
-        className="pointer-events-none absolute -bottom-[0.32em] left-0 h-[0.42em] w-full"
+        className="pointer-events-none absolute bottom-[-0.32em] left-0 h-[0.42em] w-full"
       >
         <defs>
           <linearGradient
@@ -89,4 +77,3 @@ export function FreeUnderline() {
     </span>
   )
 }
-

@@ -49,4 +49,3 @@ export function createIconLoader(libraryName: string) {
     return <IconComponent {...props} />
   }
 }
-

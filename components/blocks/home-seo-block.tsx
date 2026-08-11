@@ -12,18 +12,6 @@ import { Card } from "@/components/custom/card"
 import { Heading } from "@/components/custom/heading"
 import { PageGridBackdrop } from "@/components/page-grid-backdrop"
 
-/**
- * Dedicated SEO section on the home page, just before the CTA. Reuses the site
- * shell (`Heading` + container) and the signature Frame-based `Card` (same as
- * the Wall of Love testimonials, in linked `url` mode with the hover lift) to
- * present the free component offering as four stat-forward cards.
- *
- * The `variant="section"` grid backdrop is 2600px tall, so it is wrapped in its
- * own `overflow-hidden` layer that clips the texture WITHOUT clipping the
- * cards' hover shadow/translate. Counts come from build-generated registry
- * stats. Card titles and descriptions are length-matched so the four cards read
- * as an even row.
- */
 const fmt = (n: number) => n.toLocaleString("en-US")
 
 export function HomeSeoBlock() {
@@ -68,9 +56,6 @@ export function HomeSeoBlock() {
 
   return (
     <section className="relative isolate">
-      {/* Clip the tall (2600px) grid-texture backdrop to the section WITHOUT
-          clipping the cards' hover shadow/lift - so the section itself keeps
-          overflow visible. */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <PageGridBackdrop variant="section" />
       </div>
@@ -93,7 +78,6 @@ export function HomeSeoBlock() {
                   outerClassName="group h-full hover:shadow-[0_10px_28px_-14px_rgba(0,0,0,0.12)]!"
                   className="h-full gap-5 [--frame-panel-bg:var(--color-site-card)]"
                 >
-                  {/* Stat row: icon tile on the left, registry count on the right. */}
                   <div className="flex items-center justify-between">
                     <span className="border-site-background bg-site-muted [&_svg]:text-site-accent-foreground flex size-9 shrink-0 items-center justify-center rounded-lg border-2 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] dark:border [&_svg]:size-4">
                       <Icon aria-hidden />
@@ -123,7 +107,6 @@ export function HomeSeoBlock() {
               )
             )}
           </div>
-
           <p className="text-site-muted-foreground mt-10 text-center text-sm">
             Free and open-source under the MIT license.{" "}
             <Link
@@ -139,4 +122,3 @@ export function HomeSeoBlock() {
     </section>
   )
 }
-

@@ -415,4 +415,3 @@ export const formatBytes = (bytes: number, decimals = 2): string => {
 
   return Number.parseFloat((bytes / k ** i).toFixed(dm)) + sizes[i]
 }
-

@@ -35,7 +35,7 @@ function AlertTitle({ className, ...props }: React.ComponentProps<"div">) {
     <div
       data-slot="alert-title"
       className={cn(
-        "cn-alert-title [&_a]:underline [&_a]:underline-offset-3 [&_a]:hover:text-foreground",
+        "cn-alert-title [&_a]:hover:text-foreground [&_a]:underline [&_a]:underline-offset-3",
         className
       )}
       {...props}
@@ -51,7 +51,7 @@ function AlertDescription({
     <div
       data-slot="alert-description"
       className={cn(
-        "cn-alert-description [&_a]:underline [&_a]:underline-offset-3 [&_a]:hover:text-foreground",
+        "cn-alert-description [&_a]:hover:text-foreground [&_a]:underline [&_a]:underline-offset-3",
         className
       )}
       {...props}
@@ -70,4 +70,3 @@ function AlertAction({ className, ...props }: React.ComponentProps<"div">) {
 }
 
 export { Alert, AlertTitle, AlertDescription, AlertAction }
-

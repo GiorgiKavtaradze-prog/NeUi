@@ -46,7 +46,7 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
             .replace(/\?/g, "")
             .toLowerCase()}
           className={cn(
-            "font-site-heading [&+]*:[code]:text-xl mt-10 scroll-m-28 text-xl font-medium tracking-tight first:mt-0 lg:mt-16 [&+.steps]:!mt-0 [&+.steps>h3]:!mt-4 [&+h3]:!mt-6 [&+p]:!mt-4",
+            "font-site-heading [&+]*:[code]:text-xl mt-10 scroll-m-28 text-xl font-medium tracking-tight first:mt-0 lg:mt-16 [&+.steps]:mt-0! [&+.steps>h3]:mt-4! [&+h3]:mt-6! [&+p]:mt-4!",
             className
           )}
           {...props}
@@ -56,7 +56,7 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
     h3: ({ className, ...props }: React.ComponentProps<"h3">) => (
       <h3
         className={cn(
-          "font-site-heading mt-12 scroll-m-28 text-lg font-medium tracking-tight [&+p]:!mt-4 *:[code]:text-xl",
+          "font-site-heading mt-12 scroll-m-28 text-lg font-medium tracking-tight [&+p]:mt-4! *:[code]:text-xl",
           className
         )}
         {...props}
@@ -91,7 +91,7 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
     ),
     p: ({ className, ...props }: React.ComponentProps<"p">) => (
       <p
-        className={cn("leading-relaxed [&:not(:first-child)]:mt-6", className)}
+        className={cn("leading-relaxed not-first:mt-6", className)}
         {...props}
       />
     ),
@@ -117,7 +117,6 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
       />
     ),
     img: ({ className, alt, ...props }: React.ComponentProps<"img">) => (
-      // eslint-disable-next-line @next/next/no-img-element
       <img className={cn("site-rounded-md", className)} alt={alt} {...props} />
     ),
     hr: ({ ...props }: React.ComponentProps<"hr">) => (
@@ -140,7 +139,7 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
     th: ({ className, ...props }: React.ComponentProps<"th">) => (
       <th
         className={cn(
-          "px-4 py-2 text-left font-bold [&[align=center]]:text-center [&[align=right]]:text-right",
+          "px-4 py-2 text-left font-bold [[align=center]]:text-center [[align=right]]:text-right",
           className
         )}
         {...props}
@@ -149,7 +148,7 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
     td: ({ className, ...props }: React.ComponentProps<"td">) => (
       <td
         className={cn(
-          "px-4 py-2 text-left whitespace-nowrap [&[align=center]]:text-center [&[align=right]]:text-right",
+          "px-4 py-2 text-left whitespace-nowrap [[align=center]]:text-center [[align=right]]:text-right",
           className
         )}
         {...props}
@@ -159,7 +158,7 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
       return (
         <pre
           className={cn(
-            "scrollbar min-w-0 overflow-x-auto px-4 py-3.5 outline-none has-[[data-highlighted-line]]:px-0 has-[[data-line-numbers]]:px-0 has-[[data-slot=tabs]]:p-0",
+            "scrollbar min-w-0 overflow-x-auto px-4 py-3.5 outline-none has-data-highlighted-line:px-0 has-data-line-numbers:px-0 has-data-[slot=tabs]:p-0",
             className
           )}
           {...props}
@@ -173,17 +172,9 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
       children,
       ...props
     }: React.ComponentProps<"figure">) => {
-      // rehype-pretty-code wraps every code block in a figure carrying this
-      // data attribute. Only those get the copy button (real image figures do
-      // not). The figure is `position: relative` (globals.css), so the button
-      // anchors to the top-right - into the title header when there is one.
       const isCode = "data-rehype-pretty-code-figure" in props
       return (
         <figure className={cn(className)} {...props}>
-          {/* Single copy button for every code block. It anchors top-right of
-              the (relative) figure - into the title header when there is one,
-              over the code when there is not - so titled and untitled blocks
-              share one affordance (no duplicate button). */}
           {isCode && <CopyCodeButton className="absolute top-2 right-2" />}
           {children}
         </figure>
@@ -202,10 +193,6 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
       return (
         <figcaption
           className={cn(
-            // Header bar (padding, divider, mono) styling lives in globals.css
-            // [data-rehype-pretty-code-title]. It is a flex row, so the icon,
-            // title, and copy button all vertically center; `ml-auto` on the
-            // button pushes it to the right.
             "text-site-code-foreground [&_svg]:text-site-code-foreground flex items-center gap-2 font-medium [&_svg]:size-3.5 [&_svg]:opacity-70",
             className
           )}
@@ -238,15 +225,13 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
         return (
           <code
             className={cn(
-              "bg-site-muted site-rounded-md relative px-[0.3rem] py-[0.2rem] font-mono text-[0.8rem] break-words outline-none",
+              "bg-site-muted site-rounded-md relative px-[0.3rem] py-[0.2rem] font-mono text-[0.8rem] wrap-break-word outline-none",
               className
             )}
             {...props}
           />
         )
       }
-
-      // npm command.
       const isNpmCommand = __npm__ && __yarn__ && __pnpm__ && __bun__
 
       if (isNpmCommand) {
@@ -259,9 +244,6 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
           />
         )
       }
-
-      // Default codeblock. The copy button is rendered by the `figure`
-      // override (CopyCodeButton), so nothing to add here.
       return <code {...props} />
     },
     Step: ({ className, ...props }: React.ComponentProps<"h3">) => (
@@ -396,4 +378,3 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
 }
 
 export const mdxComponents = getMDXComponents()
-

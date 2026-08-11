@@ -148,28 +148,10 @@ export function HomeComponentsCategoriesBlock({
 }) {
   return (
     <section
-      // `relative` anchors the grid backdrop below; `overflow-hidden` clips it
-      // to the section. `pb-0` removes the trailing gap below the bordered grid
-      // so the next section ("Crafted, not generated" / ProofBlock, which has
-      // its own tinted bg + `border-y`) docks flush. The grid's `border-b` and
-      // the ProofBlock's `border-t` then form a single shared seam.
       className="bg-site-background relative overflow-hidden pt-14 pb-0 lg:pt-18"
       aria-labelledby="home-components-categories-title"
     >
-      {/*
-        Section heading halo: the shared grid texture with an early top fade
-        that dissolves into the section background. It sits behind the content
-        (z-0), so the wrappers below opt into `z-10` to paint over it.
-      */}
       <PageGridBackdrop variant="section" />
-
-      {/*
-        Heading stays inside the `container-wrapper` + `container`
-        (max-w 1400px, centered, with horizontal padding) so it
-        lines up with the other home sections. The grid below
-        deliberately sits OUTSIDE all wrappers so it spans true
-        edge-to-edge viewport width with no left/right padding.
-      */}
       <div className="container-wrapper relative z-10">
         <div className="container">
           <Heading
@@ -185,21 +167,6 @@ export function HomeComponentsCategoriesBlock({
           />
         </div>
       </div>
-
-      {/*
-        Bordered grid, full viewport width. The `Card` frame is gone:
-        each cell brings its own border, and `-m-px` on the cells
-        collapses adjacent borders into single hairlines for the
-        classic "bordered grid" look. `overflow-hidden` clips the
-        outermost edge cells' negative margins so the grid doesn't
-        cause a 2px horizontal scrollbar on the page.
-
-        Auto-fit grid: `repeat(auto-fit, minmax(220px, 1fr))` packs
-        as many cells as fit at >= 220px each and distributes any
-        remaining space equally (1fr). Scales fluidly from a single
-        full-width column on mobile up to 7–8+ columns on
-        ultra-wide displays.
-      */}
       <div className="border-site-border/60 relative z-10 grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] overflow-hidden border-t border-b">
         {categories.map((category) => {
           const Icon = CATEGORY_ICONS[category.slug] ?? ComponentIcon
@@ -234,4 +201,3 @@ export function HomeComponentsCategoriesBlock({
     </section>
   )
 }
-

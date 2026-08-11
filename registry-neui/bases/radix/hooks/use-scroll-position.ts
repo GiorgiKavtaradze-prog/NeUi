@@ -37,4 +37,3 @@ const useScrollPosition = ({
 }
 
 export { useScrollPosition }
-

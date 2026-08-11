@@ -4,17 +4,13 @@ import * as React from "react"
 
 import { normalizeComponentSearchQuery } from "@/lib/component-search-filter"
 
-import type { Component } from "../types"
 import { ComponentsGrid } from "../components/components-grid"
+import type { Component } from "../types"
 
 interface CategoryPageContentProps {
   components: Component[]
 }
 
-/**
- * Category pages restore the interactive create shell experience:
- * sidebar browsing, live component previews, and the customizer.
- */
 export function CategoryPageContent({ components }: CategoryPageContentProps) {
   const [searchQuery, setSearchQuery] = React.useState("")
 
@@ -53,4 +49,3 @@ export function CategoryPageContent({ components }: CategoryPageContentProps) {
     </div>
   )
 }
-

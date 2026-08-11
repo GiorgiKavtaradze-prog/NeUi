@@ -155,4 +155,3 @@ export {
   FrameFooter,
   frameVariants,
 }
-

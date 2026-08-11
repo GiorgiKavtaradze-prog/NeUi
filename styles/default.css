@@ -1,6 +1,3 @@
-/* Site-only isolated tokens. These remain stable while shadcn/create updates
-   the shared document tokens for previews. */
-
 @theme inline {
   --font-site-sans: var(--site-font-sans);
   --font-site-heading: var(--site-font-heading);

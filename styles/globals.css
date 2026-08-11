@@ -3,7 +3,6 @@
 @import "./default.css";
 @import "shadcn/tailwind.css";
 
-/* begin: shadcn/create styles */
 @import "../registry/styles/style-vega.css" layer(base);
 @import "../registry/styles/style-nova.css" layer(base);
 @import "../registry/styles/style-lyra.css" layer(base);
@@ -22,9 +21,6 @@
 @custom-variant style-sera (&:where(.style-sera *));
 @custom-variant style-rhea (&:where(.style-rhea *));
 
-/* end: shadcn/create styles */
-
-/* custom shadcn font-heading */
 .cn-font-heading {
   font-family: var(--font-heading);
 }
@@ -91,7 +87,6 @@
   --color-selection: var(--selection);
   --color-selection-foreground: var(--selection-foreground);
 
-  /* Extended colors */
   --color-destructive-foreground: var(--destructive-foreground);
   --color-success: var(--success);
   --color-success-foreground: var(--success-foreground);
@@ -102,7 +97,6 @@
   --color-invert: var(--invert);
   --color-invert-foreground: var(--invert-foreground);
 
-  /* Animations */
   --animate-collapsible-down: collapsible-down 0.2s ease-out;
   --animate-collapsible-up: collapsible-up 0.2s ease-out;
 }
@@ -152,7 +146,6 @@
   }
 }
 
-/* Default */
 :root {
   --font-sans: var(--font-inter);
   --font-heading: var(--font-inter);
@@ -193,7 +186,6 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
-  /* Extended colors */
   --destructive-foreground: var(--color-red-800);
   --success: var(--color-emerald-500);
   --success-foreground: var(--color-emerald-900);
@@ -238,7 +230,6 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.439 0 0);
 
-  /* Extended colors */
   --destructive-foreground: var(--color-red-600);
   --success: var(--color-emerald-500);
   --success-foreground: var(--color-emerald-600);
@@ -250,7 +241,6 @@
   --invert-foreground: var(--color-zinc-50);
 }
 
-/* Extended */
 :root {
   --surface: oklch(0.98 0 0);
   --surface-foreground: var(--foreground);
@@ -478,4 +468,3 @@
     font-size: 0.8rem;
   }
 }
-

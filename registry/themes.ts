@@ -1084,4 +1084,3 @@ export const THEMES: RegistryItem[] = [
 ] as const satisfies RegistryItem[]
 
 export type Theme = (typeof THEMES)[number]
-

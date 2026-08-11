@@ -188,4 +188,3 @@ export const STYLES = [
 ] as const
 
 export type Style = (typeof STYLES)[number]
-

@@ -218,4 +218,3 @@ const dismissedAnnouncementsAtom = atomWithStorage<string[]>(
 export function useDismissedAnnouncements() {
   return useAtom(dismissedAnnouncementsAtom)
 }
-

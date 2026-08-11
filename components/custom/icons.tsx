@@ -348,4 +348,3 @@ export function getIconForLanguageExtension(
       return <FileIcon {...(props as any)} />
   }
 }
-

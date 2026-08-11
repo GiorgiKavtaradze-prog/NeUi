@@ -1,20 +1,16 @@
-import Link from "next/link";
-import { ArrowRightIcon } from "lucide-react";
+import Link from "next/link"
+import { ArrowRightIcon } from "lucide-react"
 
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils"
+import { Button } from "@/components/ui/button"
 
 export function CTABlock({ className }: { className?: string }) {
   return (
     <section
       className={cn(
-        // Light mode: a bold inverted (near-black) band. Dark mode: that flip
-        // would be a glaring white panel between the dark FAQ and footer, so
-        // keep it dark - a slightly elevated surface sealed with a hairline -
-        // and let the button carry the contrast instead.
         "bg-site-foreground text-site-background relative overflow-hidden py-20",
         "dark:bg-site-card/50 dark:text-site-foreground dark:border-site-border dark:border-y",
-        className,
+        className
       )}
     >
       <div className="relative container flex flex-col items-center text-center">
@@ -40,6 +36,5 @@ export function CTABlock({ className }: { className?: string }) {
         </div>
       </div>
     </section>
-  );
+  )
 }
-
