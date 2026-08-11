@@ -56,12 +56,6 @@ brand-new category, also run `pnpm install` once so pnpm links the new
   regenerated `public/r/styles/**` and `registry-neui/_meta/**`.
 - Keep changes focused and describe the motivation in your PR.
 
-## Reporting issues
-
-Open an issue on [GitHub](https://github.com/keenthemes/neui/issues) with clear
-reproduction steps. For questions, reach us at
-[@neui_io](https://x.com/neui_io) or [hello@neui.io](mailto:hello@neui.io).
-
 ## License
 
 By contributing, you agree that your contributions are licensed under the

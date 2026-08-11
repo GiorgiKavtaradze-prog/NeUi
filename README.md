@@ -3,7 +3,6 @@
 <div align="center">
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Stars](https://img.shields.io/github/stars/keenthemes/neui?style=flat-square)](https://github.com/keenthemes/neui)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18%2B-blue?logo=react)](https://react.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4%2B-blue?logo=tailwindcss)](https://tailwindcss.com/)
@@ -135,11 +134,11 @@ We welcome contributions — new examples, bug fixes, documentation improvements
 3. Add your changes with TypeScript types and accessibility features
 4. Open a pull request with a clear description
 
-See [CONTRIBUTING.md](https://github.com/keenthemes/neui/blob/main/CONTRIBUTING.md) for full guidelines.
+See [CONTRIBUTING.md](https://github.com/GiorgiKavtaradze-prog/NeUi/blob/main/CONTRIBUTING.md) for full guidelines.
 
 ---
 
 ## License
 
-NeUI is open-source software licensed under the [MIT License](https://github.com/keenthemes/neui/blob/main/LICENSE.md).
+NeUI is open-source software licensed under the [MIT License](https://github.com/GiorgiKavtaradze-prog/NeUi/blob/main/LICENSE.md).
 
