@@ -48,8 +48,6 @@ export function ComponentCardContainer({
   return (
     <Frame
       ref={containerRef}
-      // content-visibility: auto defers off-screen rendering (vercel-react-best-practices: rendering-content-visibility)
-      // contain-intrinsic-size provides estimated height to prevent layout shift
       className={cn(
         "[contain-intrinsic-size:0_352px] [content-visibility:auto]",
         isFullWidth && "md:col-span-2",
@@ -83,4 +81,3 @@ export function ComponentCardContainer({
     </Frame>
   )
 }
-

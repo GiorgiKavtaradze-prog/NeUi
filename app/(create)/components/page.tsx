@@ -58,8 +58,6 @@ const featuredCategories = [
 ] as const
 
 export const metadata: Metadata = buildPageMetadata({
-  // Clean title — the root `%s - NeUI` template adds the brand. The
-  // manual `+ " - NeUI"` here doubled it to "… - NeUI - NeUI".
   title,
   description,
   path: "/components",
@@ -74,10 +72,6 @@ export const metadata: Metadata = buildPageMetadata({
   ],
 })
 
-/**
- * Cache the registry walk + SEO build so every visitor shares the same
- * computed payload until the next deploy.
- */
 async function loadComponentsPageData() {
   "use cache"
   cacheLife("max")
@@ -136,4 +130,3 @@ export default async function ComponentsPage() {
     </>
   )
 }
-

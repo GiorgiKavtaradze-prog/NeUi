@@ -28,10 +28,6 @@ export async function GET(request: NextRequest) {
       )
     }
 
-    // designSystemConfigSchema builds its base enum from the mirror, so it
-    // accepts every shadcn base including ones this repo does not ship.
-    // Reject those instead of returning an install target (and a runtime
-    // dependency such as react-aria-components) backed by no content.
     if (!isBaseAvailable(result.data.base)) {
       return NextResponse.json(
         { error: `Unsupported base: ${result.data.base}` },
@@ -68,4 +64,3 @@ export async function GET(request: NextRequest) {
     )
   }
 }
-

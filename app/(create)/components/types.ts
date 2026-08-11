@@ -16,14 +16,11 @@ export interface Component {
     gridSize?: GridSize
     order?: number
   }
-  // Pre-computed for fast search (optional for backwards compatibility)
   searchText?: string
 }
 
-// Legacy type for backwards compatibility
 export interface CategoryWithCount {
   category: string
   description?: string
   count: number
 }
-

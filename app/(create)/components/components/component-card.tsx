@@ -15,10 +15,6 @@ import {
 import { ComponentCardPreview } from "./component-card-preview"
 import { ComponentSourceSheetContent } from "./component-source-sheet-content"
 
-// Memoized so a grid-wide re-render (e.g. the debounced search URL
-// update re-filtering the list) skips cards whose props are unchanged;
-// `component` identity is stable across filters and the mounted live
-// previews are the expensive subtree we want to keep idle.
 export const ComponentCard = React.memo(function ComponentCard({
   component,
   className,
@@ -76,4 +72,3 @@ export const ComponentCard = React.memo(function ComponentCard({
     </ComponentCardContainer>
   )
 })
-

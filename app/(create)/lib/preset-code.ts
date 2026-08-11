@@ -2,11 +2,6 @@ import { encodePreset, type PresetConfig } from "shadcn/preset"
 
 import type { Config } from "@/lib/preferences"
 
-/**
- * Subset of the design-system config that contributes to the canonical
- * shadcn preset code. The rest of `Config` (UI state, layout prefs) is
- * intentionally excluded so the preset code only reflects visual style.
- */
 type PresetCodeInput = Pick<
   Config,
   | "style"
@@ -21,11 +16,6 @@ type PresetCodeInput = Pick<
   | "menuColor"
 >
 
-/**
- * Returns the canonical `--preset <code>` value for a given design
- * system config. Same encoding scheme as the official shadcn create
- * site uses, so codes are interchangeable.
- */
 export function getPresetCode(config: PresetCodeInput): string {
   const presetConfig: Partial<PresetConfig> = {
     style: config.style as PresetConfig["style"],
@@ -42,4 +32,3 @@ export function getPresetCode(config: PresetCodeInput): string {
 
   return encodePreset(presetConfig)
 }
-

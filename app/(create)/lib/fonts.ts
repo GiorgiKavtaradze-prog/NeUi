@@ -262,4 +262,3 @@ export const FONT_HEADING_OPTIONS = [
 ] as const
 
 export type FontHeadingOption = (typeof FONT_HEADING_OPTIONS)[number]
-

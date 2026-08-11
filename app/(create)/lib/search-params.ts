@@ -10,6 +10,8 @@ import {
   type Options,
 } from "nuqs/server"
 
+import { FONT_DEFINITIONS } from "@/lib/font-definitions"
+import { filterAvailableBases } from "@/lib/registry-bases"
 import {
   BASE_COLORS,
   BASES,
@@ -31,16 +33,8 @@ import {
   type StyleName,
   type ThemeName,
 } from "@/registry/config"
-import { filterAvailableBases } from "@/lib/registry-bases"
-import { FONT_DEFINITIONS } from "@/lib/font-definitions"
 
-// Pull the list of valid font names from the pure font-definitions
-// module rather than from `lib/fonts.ts` — the latter imports
-// `next/font/google`, which esbuild can't transform when bundling
-// block packages outside of Next.js's build.
-const FONT_NAME_LITERALS = FONT_DEFINITIONS.map(
-  (f) => f.name as FontValue
-)
+const FONT_NAME_LITERALS = FONT_DEFINITIONS.map((f) => f.name as FontValue)
 
 const fontHeadingLiterals = [
   "inherit",
@@ -48,8 +42,6 @@ const fontHeadingLiterals = [
 ] as const satisfies readonly FontHeadingValue[]
 
 const designSystemSearchParams = {
-  // Only bases this repo ships are accepted from the URL, so a stale or
-  // hand-typed ?base=aria falls back to the default instead of a dead base.
   base: parseAsStringLiteral<BaseName>(
     filterAvailableBases(BASES).map((b) => b.name)
   ),
@@ -104,4 +96,3 @@ export function isTranslucentMenuColor(
     menuColor === "default-translucent" || menuColor === "inverted-translucent"
   )
 }
-

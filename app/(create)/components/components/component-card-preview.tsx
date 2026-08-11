@@ -7,13 +7,6 @@ import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
 import { Button } from "@/components/ui/button"
 import { Spinner } from "@/components/ui/spinner"
 
-/**
- * Isolates a single component preview so a failed lazy import (e.g. a missing
- * or stale locally-built `@neui/components-*-<category>` dist, or a cold
- * Turbopack compile failure) degrades to a Retry card instead of crashing the
- * whole /components/<category> route with the Next error overlay. Mirrors
- * BlockErrorBoundary in the blocks grid (block-card-container.tsx).
- */
 class ComponentPreviewErrorBoundary extends React.Component<
   { children: React.ReactNode },
   { hasError: boolean }
@@ -154,4 +147,3 @@ export function ComponentCardPreview({
     </div>
   )
 }
-

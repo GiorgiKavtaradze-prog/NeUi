@@ -6,8 +6,6 @@ import { DesignSystemProvider } from "@/app/(create)/design-system/design-system
 import { LocksProvider } from "@/app/(create)/hooks/use-locks"
 import { createFontVariables } from "@/app/(create)/lib/fonts"
 
-// Bare iframe render targets, not standalone pages; keep them out of
-// the index. See the note in preview/[base]/[block]/layout.tsx.
 export const metadata: Metadata = {
   robots: { index: false, follow: false },
 }
@@ -33,4 +31,3 @@ export default function ComponentsPreviewLayout({
     </div>
   )
 }
-

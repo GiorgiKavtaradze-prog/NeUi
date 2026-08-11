@@ -7,22 +7,6 @@ import type { IconLibraryName } from "shadcn/icons"
 
 import { useIconLibrary } from "@/lib/icon-library-store"
 
-/**
- * IconPlaceholder — renders an icon from whatever library the user has
- * selected, with the name resolved per library via the props.
- *
- * Previously read state from `nuqs` + `DesignSystemContext` + jotai's
- * `useConfig`. That made the component impossible to bundle into a
- * workspace package — each package would carry its own copy of nuqs,
- * its own React Context, its own jotai store, and none of them would
- * see apps/web's runtime state.
- *
- * Now it reads only from `useIconLibrary`, which goes straight to
- * `window.localStorage` and listens for changes via a same-tab custom
- * event + the standard cross-tab `storage` event. No Context, no nuqs,
- * no jotai → safe to ship inside esbuild-bundled packages without any
- * multi-instance gotchas.
- */
 const IconLucide = lazy(() =>
   import("@/registry/icons/icon-lucide").then((mod) => ({
     default: mod.IconLucide,
@@ -94,4 +78,3 @@ export function IconPlaceholder({
     </Suspense>
   )
 }
-
