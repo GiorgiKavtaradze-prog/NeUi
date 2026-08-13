@@ -14,12 +14,6 @@ export interface FAQCategory {
 
 const fmt = (n: number) => n.toLocaleString("en-US")
 
-/**
- * Static, component-focused FAQ set for the open-source NeUI site.
- *
- * Answers are plain strings and may embed `[Label](href)` markdown links, which
- * `faq-block.tsx` renders into styled links. Nothing here is fetched at runtime.
- */
 const FAQ_CATEGORIES: FAQCategory[] = [
   {
     id: "general",
@@ -109,7 +103,7 @@ const FAQ_CATEGORIES: FAQCategory[] = [
         id: "contributing",
         question: "Can I contribute?",
         answer:
-          "Yes - contributions are welcome. Check the repository on [GitHub](https://github.com/keenthemes/neui) to report issues or open a pull request.",
+          "Yes - contributions are welcome. Check the repository on [GitHub](https://github.com/GiorgiKavtaradze-prog/NeUi) to report issues or open a pull request.",
       },
     ],
   },
