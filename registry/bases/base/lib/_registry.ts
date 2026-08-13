@@ -13,4 +13,3 @@ export const lib: Registry["items"] = [
     ],
   },
 ]
-
