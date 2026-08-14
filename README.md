@@ -2,6 +2,15 @@
 
 <div align="center">
 
+```
+███╗   ██╗███████╗██╗   ██╗██╗
+████╗  ██║██╔════╝██║   ██║██║
+██╔██╗ ██║█████╗  ██║   ██║██║
+██║╚██╗██║██╔══╝  ██║   ██║██║
+██║ ╚████║███████╗╚██████╔╝██║
+╚═╝  ╚═══╝╚══════╝ ╚═════╝ ╚═╝
+```
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18%2B-blue?logo=react)](https://react.dev/)
@@ -287,7 +296,8 @@ See [CONTRIBUTING.md](https://github.com/GiorgiKavtaradze-prog/NeUi/blob/main/CO
 NeUI is open-source software licensed under the [MIT License](https://github.com/GiorgiKavtaradze-prog/NeUi/blob/main/LICENSE.md).
 
 <task_progress>
+
 - [x] Read current README.md
 - [x] Analyze project structure and design
 - [x] Improve README.md with Mermaid diagrams
-</task_progress>
+      </task_progress>
