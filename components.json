@@ -23,6 +23,7 @@
     "@neui": "https://neui.io/r/{style}/{name}.json",
     "@diceui": "https://diceui.com/r/{name}.json",
     "@svgl": "https://svgl.app/r/{name}.json",
-    "@aceternity": "https://ui.aceternity.com/registry/{name}.json"
+    "@aceternity": "https://ui.aceternity.com/registry/{name}.json",
+    "@react-bits": "https://reactbits.dev/r/{name}.json"
   }
 }
