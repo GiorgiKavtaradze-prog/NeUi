@@ -103,7 +103,7 @@ const FAQ_CATEGORIES: FAQCategory[] = [
         id: "contributing",
         question: "Can I contribute?",
         answer:
-          "Yes - contributions are welcome. Check the repository on [GitHub](https://github.com/GiorgiKavtaradze-prog/NeUi) to report issues or open a pull request.",
+          "Yes - contributions are welcome. Check the repository on [GitHub](https://github.com/GiorgiKavtaradze-prog/neui) to report issues or open a pull request.",
       },
     ],
   },
