@@ -1,5 +1,7 @@
-import Link from "next/link"
+"use client"
+
 import { ArrowRight, RocketIcon } from "lucide-react"
+import { motion } from "motion/react"
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
@@ -7,6 +9,12 @@ import { Button } from "@/components/ui/button"
 const SHADCN_AVATAR = "https://github.com/shadcn.png"
 
 export function HeroBlock() {
+  const variants = {
+    enter: { opacity: 0, y: 20 },
+    center: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: 20 },
+  }
+
   return (
     <section
       className="container-wrapper relative overflow-hidden py-16 lg:py-24"
@@ -14,7 +22,7 @@ export function HeroBlock() {
     >
       <div className="relative z-10 flex flex-col items-center gap-5 text-center">
         <div className="bg-site-background border-site-border site-rounded-full flex items-center justify-center border shadow-xs shadow-black/5">
-          <Link
+          <a
             href="/docs/changelog"
             className="group bg-site-muted/40 hover:bg-site-muted/60 site-rounded-full flex items-center gap-2 p-1 transition-colors duration-200"
           >
@@ -34,11 +42,15 @@ export function HeroBlock() {
                 aria-hidden="true"
               />
             </span>
-          </Link>
+          </a>
         </div>
-        <h1
+        <motion.h1
           id="hero-heading"
           className="inline-flex max-w-4xl flex-wrap items-center justify-center gap-x-2 gap-y-1 text-3xl leading-[1.1] font-semibold tracking-tight text-balance sm:text-4xl lg:text-5xl"
+          variants={variants}
+          initial="enter"
+          animate="center"
+          exit="exit"
         >
           <span>Design-forward</span>
           <span className="inline-flex items-center gap-1.5">
@@ -54,19 +66,25 @@ export function HeroBlock() {
             <span>shadcn/ui</span>
           </span>
           <span>platform for interfaces that stand out</span>
-        </h1>
-        <p className="text-site-accent-foreground/80 max-w-xl text-base leading-relaxed text-pretty sm:text-lg">
+        </motion.h1>
+        <motion.p
+          className="text-site-accent-foreground/80 max-w-xl text-base leading-relaxed text-pretty sm:text-lg"
+          variants={variants}
+          initial="enter"
+          animate="center"
+          exit="exit"
+        >
           Free, open-source shadcn/ui components and in-house primitives,
           curated by senior design engineers and ready to copy into your project
-        </p>
-        <div className="flex flex-wrap items-center justify-center gap-4">
-          <Button asChild className="min-w-36">
-            <Link href="/components">Browse Components</Link>
-          </Button>
-          <Button asChild variant="outline" className="min-w-36">
-            <Link href="/docs">Read the Docs</Link>
-          </Button>
-        </div>
+        </motion.p>
+      </div>
+      <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <Button asChild className="min-w-36">
+          <a href="/components">Browse Components</a>
+        </Button>
+        <Button asChild variant="outline" className="min-w-36">
+          <a href="/docs">Read the Docs</a>
+        </Button>
       </div>
     </section>
   )

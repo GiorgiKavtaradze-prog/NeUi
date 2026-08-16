@@ -16,6 +16,7 @@ import { HeroBlock } from "@/components/blocks/hero-block"
 import { HomeComponentsCategoriesBlock } from "@/components/blocks/home-components-categories-block"
 import { HomeSeoBlock } from "@/components/blocks/home-seo-block"
 import { LiveShowcaseBlock } from "@/components/blocks/live-showcase-block"
+import { MagneticFeaturedBlock } from "@/components/blocks/magnetic-featured-block"
 import { ProofBlock } from "@/components/blocks/proof-block"
 import { WallOfLoveBlock } from "@/components/blocks/wall-of-love-block"
 import { JsonLd } from "@/components/json-ld"
@@ -59,6 +60,8 @@ export default function IndexPage() {
         />
 
         <LiveShowcaseBlock />
+
+        <MagneticFeaturedBlock />
 
         <ProofBlock />
 

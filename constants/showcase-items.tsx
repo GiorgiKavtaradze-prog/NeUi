@@ -5,7 +5,6 @@ import {
   EyeIcon,
   LayersIcon,
   StarIcon,
-  SwatchBookIcon,
 } from "lucide-react"
 
 import AccordionDemo from "@/components/accordion-demo"
@@ -14,7 +13,6 @@ import KbdDemo from "@/components/kbd-demo"
 import RatingDemo from "@/components/rating-demo"
 import StatsDemo from "@/components/stats-demo"
 import TabsDemo from "@/components/tabs-demo"
-import ThemeDemo from "@/components/theme-demo"
 
 export interface ShowcaseItem {
   id: string
@@ -56,16 +54,6 @@ export const SHOWCASE_ITEMS: ShowcaseItem[] = [
     component: <KbdDemo />,
     badge: "Primitive",
     href: "/components/kbd",
-  },
-  {
-    id: "themes",
-    name: "Theme System",
-    description:
-      "8 handcrafted themes — Vega, Nova, Lyra, Maia, and more — ready to go.",
-    icon: SwatchBookIcon,
-    component: <ThemeDemo />,
-    badge: "Design",
-    href: "/design-system",
   },
   {
     id: "stats",
