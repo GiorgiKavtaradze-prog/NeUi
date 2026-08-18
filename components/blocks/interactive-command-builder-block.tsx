@@ -129,6 +129,8 @@ const BASES: Array<{ value: BaseName; label: string; description: string }> = [
 export function InteractiveCliCommandBuilderBlock() {
   const [config] = useConfig()
   const [query, setQuery] = React.useState("")
+  const [selectedComponent, setSelectedComponent] =
+    React.useState<(typeof COMPONENTS)[number]>("accordion")
   const [base, setBase] = React.useState<BaseName>("base")
   const [style, setStyle] = React.useState<(typeof STYLES)[number]["name"]>(
     config.style || "vega"
@@ -145,15 +147,22 @@ export function InteractiveCliCommandBuilderBlock() {
     return COMPONENTS.filter((name) => name.includes(normalized))
   }, [query])
 
+  // Stays on the clicked component as long as it's still in view;
+  // otherwise falls back to the top search match (e.g. while typing).
+  const activeComponent = React.useMemo(() => {
+    return filteredComponents.includes(selectedComponent)
+      ? selectedComponent
+      : (filteredComponents[0] ?? COMPONENTS[0])
+  }, [filteredComponents, selectedComponent])
+
   const selectedPm =
     PACKAGE_MANAGERS.find((pm) => pm.value === packageManager) ??
     PACKAGE_MANAGERS[0]
 
   // Real-time command built from the current selection.
   const command = React.useMemo(() => {
-    const target = filteredComponents[0] ?? COMPONENTS[0]
-    return `${selectedPm.command} shadcn@latest add @neui/${target}`
-  }, [selectedPm.command, filteredComponents])
+    return `${selectedPm.command} shadcn@latest add @neui/${activeComponent}`
+  }, [selectedPm.command, activeComponent])
 
   const copyCommand = React.useCallback(async () => {
     try {
@@ -219,12 +228,14 @@ export function InteractiveCliCommandBuilderBlock() {
                 {/* Component pills */}
                 <div className="no-scrollbar flex max-h-28 flex-wrap gap-1.5 overflow-y-auto pr-1">
                   {filteredComponents.map((name) => {
-                    const isActive =
-                      name === (filteredComponents[0] ?? COMPONENTS[0])
+                    const isActive = name === activeComponent
                     return (
                       <button
                         key={name}
-                        onClick={() => setQuery("")}
+                        onClick={() => {
+                          setSelectedComponent(name)
+                          setQuery("")
+                        }}
                         className={cn(
                           "site-rounded-md cursor-pointer border px-2.5 py-1 text-xs font-medium transition-colors",
                           isActive
@@ -414,7 +425,7 @@ export function InteractiveCliCommandBuilderBlock() {
                             add
                           </span>{" "}
                           <span className="text-emerald-600 dark:text-emerald-400">
-                            @neui/{filteredComponents[0] ?? COMPONENTS[0]}
+                            @neui/{activeComponent}
                           </span>
                         </code>
                       </div>
@@ -435,7 +446,7 @@ export function InteractiveCliCommandBuilderBlock() {
                             <span className="text-emerald-500">✓</span>{" "}
                             Installing{" "}
                             <span className="text-site-foreground/90">
-                              @neui/{filteredComponents[0] ?? COMPONENTS[0]}
+                              @neui/{activeComponent}
                             </span>
                             …
                           </p>
