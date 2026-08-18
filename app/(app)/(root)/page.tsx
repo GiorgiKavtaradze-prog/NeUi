@@ -15,6 +15,7 @@ import { FAQBlock } from "@/components/blocks/faq-block"
 import { HeroBlock } from "@/components/blocks/hero-block"
 import { HomeComponentsCategoriesBlock } from "@/components/blocks/home-components-categories-block"
 import { HomeSeoBlock } from "@/components/blocks/home-seo-block"
+import { InteractiveCliCommandBuilderBlock } from "@/components/blocks/interactive-command-builder-block"
 import { LiveShowcaseBlock } from "@/components/blocks/live-showcase-block"
 import { MagneticFeaturedBlock } from "@/components/blocks/magnetic-featured-block"
 import { ProofBlock } from "@/components/blocks/proof-block"
@@ -60,6 +61,8 @@ export default function IndexPage() {
         />
 
         <LiveShowcaseBlock />
+
+        <InteractiveCliCommandBuilderBlock />
 
         <MagneticFeaturedBlock />
 
