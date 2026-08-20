@@ -2,18 +2,12 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-input-otp-1": () =>
-    import("@/registry-neui/bases/radix/components/input-otp/c-input-otp-1.tsx"),
-  "c-input-otp-2": () =>
-    import("@/registry-neui/bases/radix/components/input-otp/c-input-otp-2.tsx"),
-  "c-input-otp-3": () =>
-    import("@/registry-neui/bases/radix/components/input-otp/c-input-otp-3.tsx"),
-  "c-input-otp-4": () =>
-    import("@/registry-neui/bases/radix/components/input-otp/c-input-otp-4.tsx"),
-  "c-input-otp-5": () =>
-    import("@/registry-neui/bases/radix/components/input-otp/c-input-otp-5.tsx"),
-  "c-input-otp-6": () =>
-    import("@/registry-neui/bases/radix/components/input-otp/c-input-otp-6.tsx"),
+  "c-input-otp-1": () => import("@/registry-neui/bases/radix/components/input-otp/c-input-otp-1.tsx"),
+  "c-input-otp-2": () => import("@/registry-neui/bases/radix/components/input-otp/c-input-otp-2.tsx"),
+  "c-input-otp-3": () => import("@/registry-neui/bases/radix/components/input-otp/c-input-otp-3.tsx"),
+  "c-input-otp-4": () => import("@/registry-neui/bases/radix/components/input-otp/c-input-otp-4.tsx"),
+  "c-input-otp-5": () => import("@/registry-neui/bases/radix/components/input-otp/c-input-otp-5.tsx"),
+  "c-input-otp-6": () => import("@/registry-neui/bases/radix/components/input-otp/c-input-otp-6.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

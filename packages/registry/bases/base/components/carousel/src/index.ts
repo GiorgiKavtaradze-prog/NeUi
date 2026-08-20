@@ -2,28 +2,17 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-carousel-1": () =>
-    import("@/registry-neui/bases/base/components/carousel/c-carousel-1.tsx"),
-  "c-carousel-2": () =>
-    import("@/registry-neui/bases/base/components/carousel/c-carousel-2.tsx"),
-  "c-carousel-3": () =>
-    import("@/registry-neui/bases/base/components/carousel/c-carousel-3.tsx"),
-  "c-carousel-4": () =>
-    import("@/registry-neui/bases/base/components/carousel/c-carousel-4.tsx"),
-  "c-carousel-5": () =>
-    import("@/registry-neui/bases/base/components/carousel/c-carousel-5.tsx"),
-  "c-carousel-6": () =>
-    import("@/registry-neui/bases/base/components/carousel/c-carousel-6.tsx"),
-  "c-carousel-7": () =>
-    import("@/registry-neui/bases/base/components/carousel/c-carousel-7.tsx"),
-  "c-carousel-8": () =>
-    import("@/registry-neui/bases/base/components/carousel/c-carousel-8.tsx"),
-  "c-carousel-9": () =>
-    import("@/registry-neui/bases/base/components/carousel/c-carousel-9.tsx"),
-  "c-carousel-10": () =>
-    import("@/registry-neui/bases/base/components/carousel/c-carousel-10.tsx"),
-  "c-carousel-11": () =>
-    import("@/registry-neui/bases/base/components/carousel/c-carousel-11.tsx"),
+  "c-carousel-1": () => import("@/registry-neui/bases/base/components/carousel/c-carousel-1.tsx"),
+  "c-carousel-2": () => import("@/registry-neui/bases/base/components/carousel/c-carousel-2.tsx"),
+  "c-carousel-3": () => import("@/registry-neui/bases/base/components/carousel/c-carousel-3.tsx"),
+  "c-carousel-4": () => import("@/registry-neui/bases/base/components/carousel/c-carousel-4.tsx"),
+  "c-carousel-5": () => import("@/registry-neui/bases/base/components/carousel/c-carousel-5.tsx"),
+  "c-carousel-6": () => import("@/registry-neui/bases/base/components/carousel/c-carousel-6.tsx"),
+  "c-carousel-7": () => import("@/registry-neui/bases/base/components/carousel/c-carousel-7.tsx"),
+  "c-carousel-8": () => import("@/registry-neui/bases/base/components/carousel/c-carousel-8.tsx"),
+  "c-carousel-9": () => import("@/registry-neui/bases/base/components/carousel/c-carousel-9.tsx"),
+  "c-carousel-10": () => import("@/registry-neui/bases/base/components/carousel/c-carousel-10.tsx"),
+  "c-carousel-11": () => import("@/registry-neui/bases/base/components/carousel/c-carousel-11.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

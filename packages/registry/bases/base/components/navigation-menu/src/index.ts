@@ -2,14 +2,10 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-navigation-menu-1": () =>
-    import("@/registry-neui/bases/base/components/navigation-menu/c-navigation-menu-1.tsx"),
-  "c-navigation-menu-2": () =>
-    import("@/registry-neui/bases/base/components/navigation-menu/c-navigation-menu-2.tsx"),
-  "c-navigation-menu-3": () =>
-    import("@/registry-neui/bases/base/components/navigation-menu/c-navigation-menu-3.tsx"),
-  "c-navigation-menu-4": () =>
-    import("@/registry-neui/bases/base/components/navigation-menu/c-navigation-menu-4.tsx"),
+  "c-navigation-menu-1": () => import("@/registry-neui/bases/base/components/navigation-menu/c-navigation-menu-1.tsx"),
+  "c-navigation-menu-2": () => import("@/registry-neui/bases/base/components/navigation-menu/c-navigation-menu-2.tsx"),
+  "c-navigation-menu-3": () => import("@/registry-neui/bases/base/components/navigation-menu/c-navigation-menu-3.tsx"),
+  "c-navigation-menu-4": () => import("@/registry-neui/bases/base/components/navigation-menu/c-navigation-menu-4.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

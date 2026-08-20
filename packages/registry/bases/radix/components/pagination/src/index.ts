@@ -2,36 +2,21 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-pagination-1": () =>
-    import("@/registry-neui/bases/radix/components/pagination/c-pagination-1.tsx"),
-  "c-pagination-2": () =>
-    import("@/registry-neui/bases/radix/components/pagination/c-pagination-2.tsx"),
-  "c-pagination-3": () =>
-    import("@/registry-neui/bases/radix/components/pagination/c-pagination-3.tsx"),
-  "c-pagination-4": () =>
-    import("@/registry-neui/bases/radix/components/pagination/c-pagination-4.tsx"),
-  "c-pagination-5": () =>
-    import("@/registry-neui/bases/radix/components/pagination/c-pagination-5.tsx"),
-  "c-pagination-6": () =>
-    import("@/registry-neui/bases/radix/components/pagination/c-pagination-6.tsx"),
-  "c-pagination-7": () =>
-    import("@/registry-neui/bases/radix/components/pagination/c-pagination-7.tsx"),
-  "c-pagination-8": () =>
-    import("@/registry-neui/bases/radix/components/pagination/c-pagination-8.tsx"),
-  "c-pagination-9": () =>
-    import("@/registry-neui/bases/radix/components/pagination/c-pagination-9.tsx"),
-  "c-pagination-10": () =>
-    import("@/registry-neui/bases/radix/components/pagination/c-pagination-10.tsx"),
-  "c-pagination-11": () =>
-    import("@/registry-neui/bases/radix/components/pagination/c-pagination-11.tsx"),
-  "c-pagination-12": () =>
-    import("@/registry-neui/bases/radix/components/pagination/c-pagination-12.tsx"),
-  "c-pagination-13": () =>
-    import("@/registry-neui/bases/radix/components/pagination/c-pagination-13.tsx"),
-  "c-pagination-14": () =>
-    import("@/registry-neui/bases/radix/components/pagination/c-pagination-14.tsx"),
-  "c-pagination-15": () =>
-    import("@/registry-neui/bases/radix/components/pagination/c-pagination-15.tsx"),
+  "c-pagination-1": () => import("@/registry-neui/bases/radix/components/pagination/c-pagination-1.tsx"),
+  "c-pagination-2": () => import("@/registry-neui/bases/radix/components/pagination/c-pagination-2.tsx"),
+  "c-pagination-3": () => import("@/registry-neui/bases/radix/components/pagination/c-pagination-3.tsx"),
+  "c-pagination-4": () => import("@/registry-neui/bases/radix/components/pagination/c-pagination-4.tsx"),
+  "c-pagination-5": () => import("@/registry-neui/bases/radix/components/pagination/c-pagination-5.tsx"),
+  "c-pagination-6": () => import("@/registry-neui/bases/radix/components/pagination/c-pagination-6.tsx"),
+  "c-pagination-7": () => import("@/registry-neui/bases/radix/components/pagination/c-pagination-7.tsx"),
+  "c-pagination-8": () => import("@/registry-neui/bases/radix/components/pagination/c-pagination-8.tsx"),
+  "c-pagination-9": () => import("@/registry-neui/bases/radix/components/pagination/c-pagination-9.tsx"),
+  "c-pagination-10": () => import("@/registry-neui/bases/radix/components/pagination/c-pagination-10.tsx"),
+  "c-pagination-11": () => import("@/registry-neui/bases/radix/components/pagination/c-pagination-11.tsx"),
+  "c-pagination-12": () => import("@/registry-neui/bases/radix/components/pagination/c-pagination-12.tsx"),
+  "c-pagination-13": () => import("@/registry-neui/bases/radix/components/pagination/c-pagination-13.tsx"),
+  "c-pagination-14": () => import("@/registry-neui/bases/radix/components/pagination/c-pagination-14.tsx"),
+  "c-pagination-15": () => import("@/registry-neui/bases/radix/components/pagination/c-pagination-15.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

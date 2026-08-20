@@ -2,26 +2,16 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-resizable-1": () =>
-    import("@/registry-neui/bases/base/components/resizable/c-resizable-1.tsx"),
-  "c-resizable-2": () =>
-    import("@/registry-neui/bases/base/components/resizable/c-resizable-2.tsx"),
-  "c-resizable-3": () =>
-    import("@/registry-neui/bases/base/components/resizable/c-resizable-3.tsx"),
-  "c-resizable-4": () =>
-    import("@/registry-neui/bases/base/components/resizable/c-resizable-4.tsx"),
-  "c-resizable-5": () =>
-    import("@/registry-neui/bases/base/components/resizable/c-resizable-5.tsx"),
-  "c-resizable-6": () =>
-    import("@/registry-neui/bases/base/components/resizable/c-resizable-6.tsx"),
-  "c-resizable-7": () =>
-    import("@/registry-neui/bases/base/components/resizable/c-resizable-7.tsx"),
-  "c-resizable-8": () =>
-    import("@/registry-neui/bases/base/components/resizable/c-resizable-8.tsx"),
-  "c-resizable-9": () =>
-    import("@/registry-neui/bases/base/components/resizable/c-resizable-9.tsx"),
-  "c-resizable-10": () =>
-    import("@/registry-neui/bases/base/components/resizable/c-resizable-10.tsx"),
+  "c-resizable-1": () => import("@/registry-neui/bases/base/components/resizable/c-resizable-1.tsx"),
+  "c-resizable-2": () => import("@/registry-neui/bases/base/components/resizable/c-resizable-2.tsx"),
+  "c-resizable-3": () => import("@/registry-neui/bases/base/components/resizable/c-resizable-3.tsx"),
+  "c-resizable-4": () => import("@/registry-neui/bases/base/components/resizable/c-resizable-4.tsx"),
+  "c-resizable-5": () => import("@/registry-neui/bases/base/components/resizable/c-resizable-5.tsx"),
+  "c-resizable-6": () => import("@/registry-neui/bases/base/components/resizable/c-resizable-6.tsx"),
+  "c-resizable-7": () => import("@/registry-neui/bases/base/components/resizable/c-resizable-7.tsx"),
+  "c-resizable-8": () => import("@/registry-neui/bases/base/components/resizable/c-resizable-8.tsx"),
+  "c-resizable-9": () => import("@/registry-neui/bases/base/components/resizable/c-resizable-9.tsx"),
+  "c-resizable-10": () => import("@/registry-neui/bases/base/components/resizable/c-resizable-10.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

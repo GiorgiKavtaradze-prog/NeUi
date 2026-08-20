@@ -2,40 +2,23 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-icon-tile-1": () =>
-    import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-1.tsx"),
-  "c-icon-tile-2": () =>
-    import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-2.tsx"),
-  "c-icon-tile-3": () =>
-    import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-3.tsx"),
-  "c-icon-tile-4": () =>
-    import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-4.tsx"),
-  "c-icon-tile-5": () =>
-    import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-5.tsx"),
-  "c-icon-tile-6": () =>
-    import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-6.tsx"),
-  "c-icon-tile-7": () =>
-    import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-7.tsx"),
-  "c-icon-tile-8": () =>
-    import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-8.tsx"),
-  "c-icon-tile-9": () =>
-    import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-9.tsx"),
-  "c-icon-tile-10": () =>
-    import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-10.tsx"),
-  "c-icon-tile-11": () =>
-    import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-11.tsx"),
-  "c-icon-tile-12": () =>
-    import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-12.tsx"),
-  "c-icon-tile-13": () =>
-    import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-13.tsx"),
-  "c-icon-tile-14": () =>
-    import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-14.tsx"),
-  "c-icon-tile-15": () =>
-    import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-15.tsx"),
-  "c-icon-tile-16": () =>
-    import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-16.tsx"),
-  "c-icon-tile-17": () =>
-    import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-17.tsx"),
+  "c-icon-tile-1": () => import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-1.tsx"),
+  "c-icon-tile-2": () => import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-2.tsx"),
+  "c-icon-tile-3": () => import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-3.tsx"),
+  "c-icon-tile-4": () => import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-4.tsx"),
+  "c-icon-tile-5": () => import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-5.tsx"),
+  "c-icon-tile-6": () => import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-6.tsx"),
+  "c-icon-tile-7": () => import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-7.tsx"),
+  "c-icon-tile-8": () => import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-8.tsx"),
+  "c-icon-tile-9": () => import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-9.tsx"),
+  "c-icon-tile-10": () => import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-10.tsx"),
+  "c-icon-tile-11": () => import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-11.tsx"),
+  "c-icon-tile-12": () => import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-12.tsx"),
+  "c-icon-tile-13": () => import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-13.tsx"),
+  "c-icon-tile-14": () => import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-14.tsx"),
+  "c-icon-tile-15": () => import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-15.tsx"),
+  "c-icon-tile-16": () => import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-16.tsx"),
+  "c-icon-tile-17": () => import("@/registry-neui/bases/radix/components/icon-tile/c-icon-tile-17.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

@@ -2,66 +2,36 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-data-grid-1": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-1.tsx"),
-  "c-data-grid-2": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-2.tsx"),
-  "c-data-grid-3": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-3.tsx"),
-  "c-data-grid-4": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-4.tsx"),
-  "c-data-grid-5": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-5.tsx"),
-  "c-data-grid-6": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-6.tsx"),
-  "c-data-grid-7": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-7.tsx"),
-  "c-data-grid-8": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-8.tsx"),
-  "c-data-grid-9": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-9.tsx"),
-  "c-data-grid-10": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-10.tsx"),
-  "c-data-grid-11": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-11.tsx"),
-  "c-data-grid-12": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-12.tsx"),
-  "c-data-grid-13": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-13.tsx"),
-  "c-data-grid-14": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-14.tsx"),
-  "c-data-grid-15": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-15.tsx"),
-  "c-data-grid-16": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-16.tsx"),
-  "c-data-grid-17": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-17.tsx"),
-  "c-data-grid-18": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-18.tsx"),
-  "c-data-grid-19": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-19.tsx"),
-  "c-data-grid-20": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-20.tsx"),
-  "c-data-grid-21": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-21.tsx"),
-  "c-data-grid-22": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-22.tsx"),
-  "c-data-grid-23": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-23.tsx"),
-  "c-data-grid-24": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-24.tsx"),
-  "c-data-grid-25": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-25.tsx"),
-  "c-data-grid-26": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-26.tsx"),
-  "c-data-grid-27": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-27.tsx"),
-  "c-data-grid-28": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-28.tsx"),
-  "c-data-grid-29": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-29.tsx"),
-  "c-data-grid-30": () =>
-    import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-30.tsx"),
+  "c-data-grid-1": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-1.tsx"),
+  "c-data-grid-2": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-2.tsx"),
+  "c-data-grid-3": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-3.tsx"),
+  "c-data-grid-4": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-4.tsx"),
+  "c-data-grid-5": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-5.tsx"),
+  "c-data-grid-6": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-6.tsx"),
+  "c-data-grid-7": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-7.tsx"),
+  "c-data-grid-8": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-8.tsx"),
+  "c-data-grid-9": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-9.tsx"),
+  "c-data-grid-10": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-10.tsx"),
+  "c-data-grid-11": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-11.tsx"),
+  "c-data-grid-12": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-12.tsx"),
+  "c-data-grid-13": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-13.tsx"),
+  "c-data-grid-14": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-14.tsx"),
+  "c-data-grid-15": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-15.tsx"),
+  "c-data-grid-16": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-16.tsx"),
+  "c-data-grid-17": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-17.tsx"),
+  "c-data-grid-18": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-18.tsx"),
+  "c-data-grid-19": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-19.tsx"),
+  "c-data-grid-20": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-20.tsx"),
+  "c-data-grid-21": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-21.tsx"),
+  "c-data-grid-22": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-22.tsx"),
+  "c-data-grid-23": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-23.tsx"),
+  "c-data-grid-24": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-24.tsx"),
+  "c-data-grid-25": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-25.tsx"),
+  "c-data-grid-26": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-26.tsx"),
+  "c-data-grid-27": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-27.tsx"),
+  "c-data-grid-28": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-28.tsx"),
+  "c-data-grid-29": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-29.tsx"),
+  "c-data-grid-30": () => import("@/registry-neui/bases/radix/components/data-grid/c-data-grid-30.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders
