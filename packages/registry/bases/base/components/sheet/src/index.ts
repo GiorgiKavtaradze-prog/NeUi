@@ -2,14 +2,10 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-sheet-1": () =>
-    import("@/registry-neui/bases/base/components/sheet/c-sheet-1.tsx"),
-  "c-sheet-2": () =>
-    import("@/registry-neui/bases/base/components/sheet/c-sheet-2.tsx"),
-  "c-sheet-3": () =>
-    import("@/registry-neui/bases/base/components/sheet/c-sheet-3.tsx"),
-  "c-sheet-4": () =>
-    import("@/registry-neui/bases/base/components/sheet/c-sheet-4.tsx"),
+  "c-sheet-1": () => import("@/registry-neui/bases/base/components/sheet/c-sheet-1.tsx"),
+  "c-sheet-2": () => import("@/registry-neui/bases/base/components/sheet/c-sheet-2.tsx"),
+  "c-sheet-3": () => import("@/registry-neui/bases/base/components/sheet/c-sheet-3.tsx"),
+  "c-sheet-4": () => import("@/registry-neui/bases/base/components/sheet/c-sheet-4.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

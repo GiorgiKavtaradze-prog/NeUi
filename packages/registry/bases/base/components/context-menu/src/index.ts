@@ -2,26 +2,16 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-context-menu-1": () =>
-    import("@/registry-neui/bases/base/components/context-menu/c-context-menu-1.tsx"),
-  "c-context-menu-2": () =>
-    import("@/registry-neui/bases/base/components/context-menu/c-context-menu-2.tsx"),
-  "c-context-menu-3": () =>
-    import("@/registry-neui/bases/base/components/context-menu/c-context-menu-3.tsx"),
-  "c-context-menu-4": () =>
-    import("@/registry-neui/bases/base/components/context-menu/c-context-menu-4.tsx"),
-  "c-context-menu-5": () =>
-    import("@/registry-neui/bases/base/components/context-menu/c-context-menu-5.tsx"),
-  "c-context-menu-6": () =>
-    import("@/registry-neui/bases/base/components/context-menu/c-context-menu-6.tsx"),
-  "c-context-menu-7": () =>
-    import("@/registry-neui/bases/base/components/context-menu/c-context-menu-7.tsx"),
-  "c-context-menu-8": () =>
-    import("@/registry-neui/bases/base/components/context-menu/c-context-menu-8.tsx"),
-  "c-context-menu-9": () =>
-    import("@/registry-neui/bases/base/components/context-menu/c-context-menu-9.tsx"),
-  "c-context-menu-10": () =>
-    import("@/registry-neui/bases/base/components/context-menu/c-context-menu-10.tsx"),
+  "c-context-menu-1": () => import("@/registry-neui/bases/base/components/context-menu/c-context-menu-1.tsx"),
+  "c-context-menu-2": () => import("@/registry-neui/bases/base/components/context-menu/c-context-menu-2.tsx"),
+  "c-context-menu-3": () => import("@/registry-neui/bases/base/components/context-menu/c-context-menu-3.tsx"),
+  "c-context-menu-4": () => import("@/registry-neui/bases/base/components/context-menu/c-context-menu-4.tsx"),
+  "c-context-menu-5": () => import("@/registry-neui/bases/base/components/context-menu/c-context-menu-5.tsx"),
+  "c-context-menu-6": () => import("@/registry-neui/bases/base/components/context-menu/c-context-menu-6.tsx"),
+  "c-context-menu-7": () => import("@/registry-neui/bases/base/components/context-menu/c-context-menu-7.tsx"),
+  "c-context-menu-8": () => import("@/registry-neui/bases/base/components/context-menu/c-context-menu-8.tsx"),
+  "c-context-menu-9": () => import("@/registry-neui/bases/base/components/context-menu/c-context-menu-9.tsx"),
+  "c-context-menu-10": () => import("@/registry-neui/bases/base/components/context-menu/c-context-menu-10.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

@@ -2,22 +2,14 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-command-1": () =>
-    import("@/registry-neui/bases/radix/components/command/c-command-1.tsx"),
-  "c-command-2": () =>
-    import("@/registry-neui/bases/radix/components/command/c-command-2.tsx"),
-  "c-command-3": () =>
-    import("@/registry-neui/bases/radix/components/command/c-command-3.tsx"),
-  "c-command-4": () =>
-    import("@/registry-neui/bases/radix/components/command/c-command-4.tsx"),
-  "c-command-5": () =>
-    import("@/registry-neui/bases/radix/components/command/c-command-5.tsx"),
-  "c-command-6": () =>
-    import("@/registry-neui/bases/radix/components/command/c-command-6.tsx"),
-  "c-command-7": () =>
-    import("@/registry-neui/bases/radix/components/command/c-command-7.tsx"),
-  "c-command-8": () =>
-    import("@/registry-neui/bases/radix/components/command/c-command-8.tsx"),
+  "c-command-1": () => import("@/registry-neui/bases/radix/components/command/c-command-1.tsx"),
+  "c-command-2": () => import("@/registry-neui/bases/radix/components/command/c-command-2.tsx"),
+  "c-command-3": () => import("@/registry-neui/bases/radix/components/command/c-command-3.tsx"),
+  "c-command-4": () => import("@/registry-neui/bases/radix/components/command/c-command-4.tsx"),
+  "c-command-5": () => import("@/registry-neui/bases/radix/components/command/c-command-5.tsx"),
+  "c-command-6": () => import("@/registry-neui/bases/radix/components/command/c-command-6.tsx"),
+  "c-command-7": () => import("@/registry-neui/bases/radix/components/command/c-command-7.tsx"),
+  "c-command-8": () => import("@/registry-neui/bases/radix/components/command/c-command-8.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

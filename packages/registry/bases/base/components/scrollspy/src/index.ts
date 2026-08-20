@@ -2,10 +2,8 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-scrollspy-1": () =>
-    import("@/registry-neui/bases/base/components/scrollspy/c-scrollspy-1.tsx"),
-  "c-scrollspy-2": () =>
-    import("@/registry-neui/bases/base/components/scrollspy/c-scrollspy-2.tsx"),
+  "c-scrollspy-1": () => import("@/registry-neui/bases/base/components/scrollspy/c-scrollspy-1.tsx"),
+  "c-scrollspy-2": () => import("@/registry-neui/bases/base/components/scrollspy/c-scrollspy-2.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

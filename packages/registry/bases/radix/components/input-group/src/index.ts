@@ -2,86 +2,46 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-input-group-1": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-1.tsx"),
-  "c-input-group-2": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-2.tsx"),
-  "c-input-group-3": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-3.tsx"),
-  "c-input-group-4": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-4.tsx"),
-  "c-input-group-5": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-5.tsx"),
-  "c-input-group-6": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-6.tsx"),
-  "c-input-group-7": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-7.tsx"),
-  "c-input-group-8": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-8.tsx"),
-  "c-input-group-9": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-9.tsx"),
-  "c-input-group-10": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-10.tsx"),
-  "c-input-group-11": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-11.tsx"),
-  "c-input-group-12": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-12.tsx"),
-  "c-input-group-13": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-13.tsx"),
-  "c-input-group-14": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-14.tsx"),
-  "c-input-group-15": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-15.tsx"),
-  "c-input-group-16": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-16.tsx"),
-  "c-input-group-17": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-17.tsx"),
-  "c-input-group-18": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-18.tsx"),
-  "c-input-group-19": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-19.tsx"),
-  "c-input-group-20": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-20.tsx"),
-  "c-input-group-21": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-21.tsx"),
-  "c-input-group-22": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-22.tsx"),
-  "c-input-group-23": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-23.tsx"),
-  "c-input-group-24": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-24.tsx"),
-  "c-input-group-25": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-25.tsx"),
-  "c-input-group-26": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-26.tsx"),
-  "c-input-group-27": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-27.tsx"),
-  "c-input-group-28": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-28.tsx"),
-  "c-input-group-29": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-29.tsx"),
-  "c-input-group-30": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-30.tsx"),
-  "c-input-group-31": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-31.tsx"),
-  "c-input-group-32": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-32.tsx"),
-  "c-input-group-33": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-33.tsx"),
-  "c-input-group-34": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-34.tsx"),
-  "c-input-group-35": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-35.tsx"),
-  "c-input-group-36": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-36.tsx"),
-  "c-input-group-37": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-37.tsx"),
-  "c-input-group-38": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-38.tsx"),
-  "c-input-group-39": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-39.tsx"),
-  "c-input-group-40": () =>
-    import("@/registry-neui/bases/radix/components/input-group/c-input-group-40.tsx"),
+  "c-input-group-1": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-1.tsx"),
+  "c-input-group-2": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-2.tsx"),
+  "c-input-group-3": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-3.tsx"),
+  "c-input-group-4": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-4.tsx"),
+  "c-input-group-5": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-5.tsx"),
+  "c-input-group-6": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-6.tsx"),
+  "c-input-group-7": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-7.tsx"),
+  "c-input-group-8": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-8.tsx"),
+  "c-input-group-9": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-9.tsx"),
+  "c-input-group-10": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-10.tsx"),
+  "c-input-group-11": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-11.tsx"),
+  "c-input-group-12": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-12.tsx"),
+  "c-input-group-13": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-13.tsx"),
+  "c-input-group-14": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-14.tsx"),
+  "c-input-group-15": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-15.tsx"),
+  "c-input-group-16": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-16.tsx"),
+  "c-input-group-17": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-17.tsx"),
+  "c-input-group-18": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-18.tsx"),
+  "c-input-group-19": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-19.tsx"),
+  "c-input-group-20": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-20.tsx"),
+  "c-input-group-21": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-21.tsx"),
+  "c-input-group-22": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-22.tsx"),
+  "c-input-group-23": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-23.tsx"),
+  "c-input-group-24": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-24.tsx"),
+  "c-input-group-25": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-25.tsx"),
+  "c-input-group-26": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-26.tsx"),
+  "c-input-group-27": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-27.tsx"),
+  "c-input-group-28": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-28.tsx"),
+  "c-input-group-29": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-29.tsx"),
+  "c-input-group-30": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-30.tsx"),
+  "c-input-group-31": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-31.tsx"),
+  "c-input-group-32": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-32.tsx"),
+  "c-input-group-33": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-33.tsx"),
+  "c-input-group-34": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-34.tsx"),
+  "c-input-group-35": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-35.tsx"),
+  "c-input-group-36": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-36.tsx"),
+  "c-input-group-37": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-37.tsx"),
+  "c-input-group-38": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-38.tsx"),
+  "c-input-group-39": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-39.tsx"),
+  "c-input-group-40": () => import("@/registry-neui/bases/radix/components/input-group/c-input-group-40.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

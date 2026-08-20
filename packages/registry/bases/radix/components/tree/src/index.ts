@@ -2,20 +2,13 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-tree-1": () =>
-    import("@/registry-neui/bases/radix/components/tree/c-tree-1.tsx"),
-  "c-tree-2": () =>
-    import("@/registry-neui/bases/radix/components/tree/c-tree-2.tsx"),
-  "c-tree-3": () =>
-    import("@/registry-neui/bases/radix/components/tree/c-tree-3.tsx"),
-  "c-tree-4": () =>
-    import("@/registry-neui/bases/radix/components/tree/c-tree-4.tsx"),
-  "c-tree-5": () =>
-    import("@/registry-neui/bases/radix/components/tree/c-tree-5.tsx"),
-  "c-tree-6": () =>
-    import("@/registry-neui/bases/radix/components/tree/c-tree-6.tsx"),
-  "c-tree-7": () =>
-    import("@/registry-neui/bases/radix/components/tree/c-tree-7.tsx"),
+  "c-tree-1": () => import("@/registry-neui/bases/radix/components/tree/c-tree-1.tsx"),
+  "c-tree-2": () => import("@/registry-neui/bases/radix/components/tree/c-tree-2.tsx"),
+  "c-tree-3": () => import("@/registry-neui/bases/radix/components/tree/c-tree-3.tsx"),
+  "c-tree-4": () => import("@/registry-neui/bases/radix/components/tree/c-tree-4.tsx"),
+  "c-tree-5": () => import("@/registry-neui/bases/radix/components/tree/c-tree-5.tsx"),
+  "c-tree-6": () => import("@/registry-neui/bases/radix/components/tree/c-tree-6.tsx"),
+  "c-tree-7": () => import("@/registry-neui/bases/radix/components/tree/c-tree-7.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

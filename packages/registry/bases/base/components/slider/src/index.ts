@@ -2,30 +2,18 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-slider-1": () =>
-    import("@/registry-neui/bases/base/components/slider/c-slider-1.tsx"),
-  "c-slider-2": () =>
-    import("@/registry-neui/bases/base/components/slider/c-slider-2.tsx"),
-  "c-slider-3": () =>
-    import("@/registry-neui/bases/base/components/slider/c-slider-3.tsx"),
-  "c-slider-4": () =>
-    import("@/registry-neui/bases/base/components/slider/c-slider-4.tsx"),
-  "c-slider-5": () =>
-    import("@/registry-neui/bases/base/components/slider/c-slider-5.tsx"),
-  "c-slider-6": () =>
-    import("@/registry-neui/bases/base/components/slider/c-slider-6.tsx"),
-  "c-slider-7": () =>
-    import("@/registry-neui/bases/base/components/slider/c-slider-7.tsx"),
-  "c-slider-8": () =>
-    import("@/registry-neui/bases/base/components/slider/c-slider-8.tsx"),
-  "c-slider-9": () =>
-    import("@/registry-neui/bases/base/components/slider/c-slider-9.tsx"),
-  "c-slider-10": () =>
-    import("@/registry-neui/bases/base/components/slider/c-slider-10.tsx"),
-  "c-slider-11": () =>
-    import("@/registry-neui/bases/base/components/slider/c-slider-11.tsx"),
-  "c-slider-12": () =>
-    import("@/registry-neui/bases/base/components/slider/c-slider-12.tsx"),
+  "c-slider-1": () => import("@/registry-neui/bases/base/components/slider/c-slider-1.tsx"),
+  "c-slider-2": () => import("@/registry-neui/bases/base/components/slider/c-slider-2.tsx"),
+  "c-slider-3": () => import("@/registry-neui/bases/base/components/slider/c-slider-3.tsx"),
+  "c-slider-4": () => import("@/registry-neui/bases/base/components/slider/c-slider-4.tsx"),
+  "c-slider-5": () => import("@/registry-neui/bases/base/components/slider/c-slider-5.tsx"),
+  "c-slider-6": () => import("@/registry-neui/bases/base/components/slider/c-slider-6.tsx"),
+  "c-slider-7": () => import("@/registry-neui/bases/base/components/slider/c-slider-7.tsx"),
+  "c-slider-8": () => import("@/registry-neui/bases/base/components/slider/c-slider-8.tsx"),
+  "c-slider-9": () => import("@/registry-neui/bases/base/components/slider/c-slider-9.tsx"),
+  "c-slider-10": () => import("@/registry-neui/bases/base/components/slider/c-slider-10.tsx"),
+  "c-slider-11": () => import("@/registry-neui/bases/base/components/slider/c-slider-11.tsx"),
+  "c-slider-12": () => import("@/registry-neui/bases/base/components/slider/c-slider-12.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

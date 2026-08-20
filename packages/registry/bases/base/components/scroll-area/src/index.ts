@@ -2,16 +2,11 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-scroll-area-1": () =>
-    import("@/registry-neui/bases/base/components/scroll-area/c-scroll-area-1.tsx"),
-  "c-scroll-area-2": () =>
-    import("@/registry-neui/bases/base/components/scroll-area/c-scroll-area-2.tsx"),
-  "c-scroll-area-3": () =>
-    import("@/registry-neui/bases/base/components/scroll-area/c-scroll-area-3.tsx"),
-  "c-scroll-area-4": () =>
-    import("@/registry-neui/bases/base/components/scroll-area/c-scroll-area-4.tsx"),
-  "c-scroll-area-5": () =>
-    import("@/registry-neui/bases/base/components/scroll-area/c-scroll-area-5.tsx"),
+  "c-scroll-area-1": () => import("@/registry-neui/bases/base/components/scroll-area/c-scroll-area-1.tsx"),
+  "c-scroll-area-2": () => import("@/registry-neui/bases/base/components/scroll-area/c-scroll-area-2.tsx"),
+  "c-scroll-area-3": () => import("@/registry-neui/bases/base/components/scroll-area/c-scroll-area-3.tsx"),
+  "c-scroll-area-4": () => import("@/registry-neui/bases/base/components/scroll-area/c-scroll-area-4.tsx"),
+  "c-scroll-area-5": () => import("@/registry-neui/bases/base/components/scroll-area/c-scroll-area-5.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

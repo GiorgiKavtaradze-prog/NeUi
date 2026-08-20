@@ -2,16 +2,11 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-menubar-1": () =>
-    import("@/registry-neui/bases/radix/components/menubar/c-menubar-1.tsx"),
-  "c-menubar-2": () =>
-    import("@/registry-neui/bases/radix/components/menubar/c-menubar-2.tsx"),
-  "c-menubar-3": () =>
-    import("@/registry-neui/bases/radix/components/menubar/c-menubar-3.tsx"),
-  "c-menubar-4": () =>
-    import("@/registry-neui/bases/radix/components/menubar/c-menubar-4.tsx"),
-  "c-menubar-5": () =>
-    import("@/registry-neui/bases/radix/components/menubar/c-menubar-5.tsx"),
+  "c-menubar-1": () => import("@/registry-neui/bases/radix/components/menubar/c-menubar-1.tsx"),
+  "c-menubar-2": () => import("@/registry-neui/bases/radix/components/menubar/c-menubar-2.tsx"),
+  "c-menubar-3": () => import("@/registry-neui/bases/radix/components/menubar/c-menubar-3.tsx"),
+  "c-menubar-4": () => import("@/registry-neui/bases/radix/components/menubar/c-menubar-4.tsx"),
+  "c-menubar-5": () => import("@/registry-neui/bases/radix/components/menubar/c-menubar-5.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders
